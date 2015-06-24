@@ -25,7 +25,7 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 import org.palladiosimulator.analyzer.workflow.ConstantsContainer;
 import org.palladiosimulator.analyzer.workflow.runconfig.AbstractConfigurationTab;
-import org.palladiosimulator.pcm.dialogs.selection.PalladioSelectEObjectDialog;
+import org.palladiosimulator.editors.dialogs.selection.PalladioSelectEObjectDialog;
 
 public class ProtoComGenerationConfigurationTab extends AbstractConfigurationTab {
 
