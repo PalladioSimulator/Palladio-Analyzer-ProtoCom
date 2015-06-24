@@ -5,7 +5,7 @@ import com.google.inject.Injector
 import java.util.List
 import org.palladiosimulator.protocom.lang.GeneratedFile
 import org.palladiosimulator.protocom.lang.ICompilationUnit
-import de.uka.ipd.sdq.pcm.core.entity.NamedElement
+import org.palladiosimulator.pcm.core.entity.NamedElement
 import org.palladiosimulator.protocom.lang.CopiedFile
 
 /**

@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.traverse.framework.resourceenvironment
 
-import de.uka.ipd.sdq.pcm.resourceenvironment.ResourceEnvironment
+import org.palladiosimulator.pcm.resourceenvironment.ResourceEnvironment
 import org.palladiosimulator.protocom.traverse.framework.PcmRepresentative
 
 /**

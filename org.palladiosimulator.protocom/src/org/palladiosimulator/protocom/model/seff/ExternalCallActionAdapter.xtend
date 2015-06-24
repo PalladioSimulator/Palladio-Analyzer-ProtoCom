@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.seff
 
-import de.uka.ipd.sdq.pcm.seff.ExternalCallAction
+import org.palladiosimulator.pcm.seff.ExternalCallAction
 import org.palladiosimulator.protocom.model.repository.SignatureAdapter
 import org.palladiosimulator.protocom.model.repository.OperationRequiredRoleAdapter
 

@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.usage
 
-import de.uka.ipd.sdq.pcm.usagemodel.OpenWorkload
+import org.palladiosimulator.pcm.usagemodel.OpenWorkload
 
 /**
  * Adapter class for PCM OpenWorkload entities.

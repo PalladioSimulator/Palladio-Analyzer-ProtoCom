@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.lang.java.util
 
-import de.uka.ipd.sdq.pcm.repository.Signature
-import de.uka.ipd.sdq.pcm.repository.OperationSignature
+import org.palladiosimulator.pcm.repository.Signature
+import org.palladiosimulator.pcm.repository.OperationSignature
 import org.palladiosimulator.protocom.lang.java.util.DataTypes
 
 /**

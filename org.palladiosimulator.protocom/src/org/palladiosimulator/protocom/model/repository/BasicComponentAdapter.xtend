@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.repository
 
-import de.uka.ipd.sdq.pcm.repository.BasicComponent
+import org.palladiosimulator.pcm.repository.BasicComponent
 import org.palladiosimulator.protocom.model.seff.ServiceEffectSpecificationAdapter
 
 /**

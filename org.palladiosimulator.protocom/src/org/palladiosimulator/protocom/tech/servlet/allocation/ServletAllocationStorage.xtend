@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.servlet.allocation
 
-import de.uka.ipd.sdq.pcm.allocation.Allocation
+import org.palladiosimulator.pcm.allocation.Allocation
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.model.allocation.AllocationAdapter
 import org.palladiosimulator.protocom.tech.servlet.ServletClass

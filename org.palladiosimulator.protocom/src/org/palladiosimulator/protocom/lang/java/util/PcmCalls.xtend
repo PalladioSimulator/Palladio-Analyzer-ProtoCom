@@ -1,20 +1,20 @@
 package org.palladiosimulator.protocom.lang.java.util
 
-import de.uka.ipd.sdq.pcm.usagemodel.EntryLevelSystemCall
-import de.uka.ipd.sdq.pcm.usagemodel.ScenarioBehaviour
-import de.uka.ipd.sdq.pcm.usagemodel.Loop
-import de.uka.ipd.sdq.pcm.usagemodel.Branch
-import de.uka.ipd.sdq.pcm.system.System
-import de.uka.ipd.sdq.pcm.core.composition.ComposedStructure
-import de.uka.ipd.sdq.pcm.core.composition.AssemblyContext
-import de.uka.ipd.sdq.pcm.core.composition.AssemblyConnector
-import de.uka.ipd.sdq.pcm.core.composition.AssemblyInfrastructureConnector
-import de.uka.ipd.sdq.pcm.core.composition.AssemblyEventConnector
-import de.uka.ipd.sdq.pcm.core.composition.DelegationConnector
-import de.uka.ipd.sdq.pcm.repository.OperationRequiredRole
-import de.uka.ipd.sdq.pcm.repository.RequiredRole
-import de.uka.ipd.sdq.pcm.repository.InfrastructureRequiredRole
-import de.uka.ipd.sdq.pcm.repository.SinkRole
+import org.palladiosimulator.pcm.usagemodel.EntryLevelSystemCall
+import org.palladiosimulator.pcm.usagemodel.ScenarioBehaviour
+import org.palladiosimulator.pcm.usagemodel.Loop
+import org.palladiosimulator.pcm.usagemodel.Branch
+import org.palladiosimulator.pcm.system.System
+import org.palladiosimulator.pcm.core.composition.ComposedStructure
+import org.palladiosimulator.pcm.core.composition.AssemblyContext
+import org.palladiosimulator.pcm.core.composition.AssemblyConnector
+import org.palladiosimulator.pcm.core.composition.AssemblyInfrastructureConnector
+import org.palladiosimulator.pcm.core.composition.AssemblyEventConnector
+import org.palladiosimulator.pcm.core.composition.DelegationConnector
+import org.palladiosimulator.pcm.repository.OperationRequiredRole
+import org.palladiosimulator.pcm.repository.RequiredRole
+import org.palladiosimulator.pcm.repository.InfrastructureRequiredRole
+import org.palladiosimulator.pcm.repository.SinkRole
 
 /**
  * Templates for external (service) calls.

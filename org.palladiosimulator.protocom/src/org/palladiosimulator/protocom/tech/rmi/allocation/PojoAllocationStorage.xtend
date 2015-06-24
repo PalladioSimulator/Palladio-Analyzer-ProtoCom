@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.rmi.allocation
 
-import de.uka.ipd.sdq.pcm.allocation.Allocation
+import org.palladiosimulator.pcm.allocation.Allocation
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.tech.rmi.PojoClass

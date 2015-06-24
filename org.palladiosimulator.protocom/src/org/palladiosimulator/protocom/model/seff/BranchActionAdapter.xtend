@@ -1,10 +1,10 @@
 package org.palladiosimulator.protocom.model.seff
 
-import de.uka.ipd.sdq.pcm.seff.BranchAction
-import de.uka.ipd.sdq.pcm.seff.ProbabilisticBranchTransition
-import de.uka.ipd.sdq.pcm.seff.GuardedBranchTransition
+import org.palladiosimulator.pcm.seff.BranchAction
+import org.palladiosimulator.pcm.seff.ProbabilisticBranchTransition
+import org.palladiosimulator.pcm.seff.GuardedBranchTransition
 import java.util.List
-import de.uka.ipd.sdq.pcm.seff.AbstractBranchTransition
+import org.palladiosimulator.pcm.seff.AbstractBranchTransition
 
 /**
  * @author Christian Klaussner

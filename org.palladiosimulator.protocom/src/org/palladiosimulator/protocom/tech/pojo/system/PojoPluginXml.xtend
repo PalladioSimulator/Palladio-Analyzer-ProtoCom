@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.tech.pojo.system
 
 import org.palladiosimulator.protocom.tech.rmi.PojoPluginXmlFile
-import de.uka.ipd.sdq.pcm.system.System
+import org.palladiosimulator.pcm.system.System
 
 class PojoPluginXml extends PojoPluginXmlFile<System>{
 	

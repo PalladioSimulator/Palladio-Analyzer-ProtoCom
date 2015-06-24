@@ -1,9 +1,9 @@
 package org.palladiosimulator.protocom.tech.rmi.repository
 
-import de.uka.ipd.sdq.pcm.repository.OperationRequiredRole
+import org.palladiosimulator.pcm.repository.OperationRequiredRole
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
-import de.uka.ipd.sdq.pcm.core.entity.InterfaceRequiringEntity
+import org.palladiosimulator.pcm.core.entity.InterfaceRequiringEntity
 import org.palladiosimulator.protocom.tech.rmi.PojoInterface
 
 /**

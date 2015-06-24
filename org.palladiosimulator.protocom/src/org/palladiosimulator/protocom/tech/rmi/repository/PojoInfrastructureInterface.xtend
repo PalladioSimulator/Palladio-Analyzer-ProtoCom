@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.rmi.repository
 
-import de.uka.ipd.sdq.pcm.repository.InfrastructureInterface
+import org.palladiosimulator.pcm.repository.InfrastructureInterface
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.lang.java.util.PcmCommons
 import org.palladiosimulator.protocom.lang.java.impl.JMethod

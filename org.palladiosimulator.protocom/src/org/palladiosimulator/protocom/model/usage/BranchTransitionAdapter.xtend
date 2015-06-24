@@ -1,8 +1,8 @@
 package org.palladiosimulator.protocom.model.usage
 
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.usagemodel.BranchTransition
-import de.uka.ipd.sdq.pcm.usagemodel.Start
+import org.palladiosimulator.pcm.usagemodel.BranchTransition
+import org.palladiosimulator.pcm.usagemodel.Start
 
 /**
  * Adapter class for PCM BranchTransition entities.

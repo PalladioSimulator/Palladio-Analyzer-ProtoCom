@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.tech.pojo.system
 
 import org.palladiosimulator.protocom.tech.rmi.PojoBuildPropertiesFile
-import de.uka.ipd.sdq.pcm.system.System
+import org.palladiosimulator.pcm.system.System
 
 class PojoBuildProperties extends PojoBuildPropertiesFile<System> {
 	

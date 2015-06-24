@@ -1,8 +1,8 @@
 package org.palladiosimulator.protocom.tech.servlet.usage
 
-import de.uka.ipd.sdq.pcm.usagemodel.AbstractUserAction
-import de.uka.ipd.sdq.pcm.usagemodel.ClosedWorkload
-import de.uka.ipd.sdq.pcm.usagemodel.UsageScenario
+import org.palladiosimulator.pcm.usagemodel.AbstractUserAction
+import org.palladiosimulator.pcm.usagemodel.ClosedWorkload
+import org.palladiosimulator.pcm.usagemodel.UsageScenario
 import java.math.BigDecimal
 import org.palladiosimulator.protocom.lang.xml.ITestPlan
 import org.palladiosimulator.protocom.model.usage.BranchAdapter

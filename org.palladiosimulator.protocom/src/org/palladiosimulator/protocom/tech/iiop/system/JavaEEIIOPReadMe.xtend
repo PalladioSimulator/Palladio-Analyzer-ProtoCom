@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.tech.iiop.system
 
 import com.google.common.collect.ArrayListMultimap
-import de.uka.ipd.sdq.pcm.system.System
+import org.palladiosimulator.pcm.system.System
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.tech.iiop.JavaEEIIOPReadMeFile
 

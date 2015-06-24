@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.system
 
-import de.uka.ipd.sdq.pcm.system.System
+import org.palladiosimulator.pcm.system.System
 import org.palladiosimulator.protocom.model.allocation.AssemblyContextAdapter
 import org.palladiosimulator.protocom.model.repository.InterfaceProvidingRequiringEntityAdapter
 

@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.rmi.util
 
-import de.uka.ipd.sdq.pcm.usagemodel.EntryLevelSystemCall
+import org.palladiosimulator.pcm.usagemodel.EntryLevelSystemCall
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.lang.java.util.PcmCommons
 import org.palladiosimulator.protocom.lang.java.util.PcmStubUserAction

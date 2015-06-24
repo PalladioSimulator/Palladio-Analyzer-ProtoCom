@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.usage
 
-import de.uka.ipd.sdq.pcm.usagemodel.Stop
+import org.palladiosimulator.pcm.usagemodel.Stop
 
 /**
  * Adapter class for PCM Stop user actions.

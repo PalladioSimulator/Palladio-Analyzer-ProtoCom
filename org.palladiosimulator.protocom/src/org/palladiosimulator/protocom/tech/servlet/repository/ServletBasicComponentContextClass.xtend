@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.servlet.repository
 
-import de.uka.ipd.sdq.pcm.repository.BasicComponent
+import org.palladiosimulator.pcm.repository.BasicComponent
 import org.palladiosimulator.protocom.lang.java.impl.JAnnotation
 import org.palladiosimulator.protocom.lang.java.impl.JField
 import org.palladiosimulator.protocom.lang.java.impl.JMethod

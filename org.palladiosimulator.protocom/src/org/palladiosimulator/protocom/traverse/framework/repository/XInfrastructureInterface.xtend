@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.traverse.framework.repository
 
-import de.uka.ipd.sdq.pcm.repository.InfrastructureInterface
+import org.palladiosimulator.pcm.repository.InfrastructureInterface
 import org.palladiosimulator.protocom.traverse.framework.PcmRepresentative
 
 /**

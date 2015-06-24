@@ -1,10 +1,10 @@
 package org.palladiosimulator.protocom.model.repository
 
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.core.entity.InterfaceProvidingRequiringEntity
-import de.uka.ipd.sdq.pcm.repository.OperationProvidedRole
-import de.uka.ipd.sdq.pcm.repository.InfrastructureProvidedRole
-import de.uka.ipd.sdq.pcm.repository.OperationRequiredRole
+import org.palladiosimulator.pcm.core.entity.InterfaceProvidingRequiringEntity
+import org.palladiosimulator.pcm.repository.OperationProvidedRole
+import org.palladiosimulator.pcm.repository.InfrastructureProvidedRole
+import org.palladiosimulator.pcm.repository.OperationRequiredRole
 
 /**
  * Abstract base class for PCM InterfaceProvidingRequiring entity adapters.

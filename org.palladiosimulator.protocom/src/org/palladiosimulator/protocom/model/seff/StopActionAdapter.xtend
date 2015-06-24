@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.seff
 
-import de.uka.ipd.sdq.pcm.seff.StopAction
+import org.palladiosimulator.pcm.seff.StopAction
 
 /**
  * @author Christian Klaussner

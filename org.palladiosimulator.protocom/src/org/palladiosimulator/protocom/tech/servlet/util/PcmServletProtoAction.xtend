@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.tech.servlet.util
 
-import de.uka.ipd.sdq.pcm.repository.OperationSignature
-import de.uka.ipd.sdq.pcm.seff.AbstractAction
+import org.palladiosimulator.pcm.repository.OperationSignature
+import org.palladiosimulator.pcm.seff.AbstractAction
 import org.palladiosimulator.protocom.lang.java.util.PcmCommons
 import org.palladiosimulator.protocom.model.seff.ActionAdapter
 import org.palladiosimulator.protocom.model.seff.BranchActionAdapter

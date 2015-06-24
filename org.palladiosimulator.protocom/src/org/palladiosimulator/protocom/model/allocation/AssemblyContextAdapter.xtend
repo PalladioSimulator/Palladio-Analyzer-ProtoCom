@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.model.allocation
 
-import de.uka.ipd.sdq.pcm.core.composition.AssemblyContext
-import de.uka.ipd.sdq.pcm.repository.BasicComponent
+import org.palladiosimulator.pcm.core.composition.AssemblyContext
+import org.palladiosimulator.pcm.repository.BasicComponent
 import org.palladiosimulator.protocom.model.ModelAdapter
 import org.palladiosimulator.protocom.model.repository.BasicComponentAdapter
 

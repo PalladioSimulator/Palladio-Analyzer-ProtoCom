@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.usage
 
-import de.uka.ipd.sdq.pcm.usagemodel.Start
+import org.palladiosimulator.pcm.usagemodel.Start
 
 /**
  * Adapter class for PCM Start user actions.

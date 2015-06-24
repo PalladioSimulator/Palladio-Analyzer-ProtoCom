@@ -1,17 +1,17 @@
 package org.palladiosimulator.protocom.traverse.framework.repository
 
-import de.uka.ipd.sdq.pcm.repository.Repository
-import de.uka.ipd.sdq.pcm.repository.BasicComponent
-import de.uka.ipd.sdq.pcm.repository.CompositeComponent
-import de.uka.ipd.sdq.pcm.repository.EventGroup
-import de.uka.ipd.sdq.pcm.repository.InfrastructureInterface
-import de.uka.ipd.sdq.pcm.repository.OperationInterface
-import de.uka.ipd.sdq.pcm.core.entity.Entity
+import org.palladiosimulator.pcm.repository.Repository
+import org.palladiosimulator.pcm.repository.BasicComponent
+import org.palladiosimulator.pcm.repository.CompositeComponent
+import org.palladiosimulator.pcm.repository.EventGroup
+import org.palladiosimulator.pcm.repository.InfrastructureInterface
+import org.palladiosimulator.pcm.repository.OperationInterface
+import org.palladiosimulator.pcm.core.entity.Entity
 import org.palladiosimulator.protocom.traverse.framework.PcmRepresentative
-import de.uka.ipd.sdq.pcm.repository.DataType
-import de.uka.ipd.sdq.pcm.repository.PrimitiveDataType
-import de.uka.ipd.sdq.pcm.repository.CompositeDataType
-import de.uka.ipd.sdq.pcm.repository.CollectionDataType
+import org.palladiosimulator.pcm.repository.DataType
+import org.palladiosimulator.pcm.repository.PrimitiveDataType
+import org.palladiosimulator.pcm.repository.CompositeDataType
+import org.palladiosimulator.pcm.repository.CollectionDataType
 
 /**
  * Traversing Repository. Child elements are:

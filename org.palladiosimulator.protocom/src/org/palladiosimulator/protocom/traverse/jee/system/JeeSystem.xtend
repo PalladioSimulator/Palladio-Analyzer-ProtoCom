@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.traverse.jee.system
 
-import de.uka.ipd.sdq.pcm.core.composition.AssemblyConnector
-import de.uka.ipd.sdq.pcm.repository.BasicComponent
+import org.palladiosimulator.pcm.core.composition.AssemblyConnector
+import org.palladiosimulator.pcm.repository.BasicComponent
 import org.palladiosimulator.protocom.lang.java.impl.JeeClass
 import org.palladiosimulator.protocom.lang.txt.impl.JeeReadMe
 import org.palladiosimulator.protocom.lang.xml.impl.JeeClasspath

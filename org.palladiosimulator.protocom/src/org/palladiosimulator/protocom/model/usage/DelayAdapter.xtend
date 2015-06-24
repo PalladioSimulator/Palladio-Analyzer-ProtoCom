@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.usage
 
-import de.uka.ipd.sdq.pcm.usagemodel.Delay
+import org.palladiosimulator.pcm.usagemodel.Delay
 
 /**
  * Adapter class for PCM Delay user actions.

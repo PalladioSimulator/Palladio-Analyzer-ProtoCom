@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.usage
 
-import de.uka.ipd.sdq.pcm.usagemodel.Branch
+import org.palladiosimulator.pcm.usagemodel.Branch
 
 /**
  * Adapter class for PCM Branch user actions.

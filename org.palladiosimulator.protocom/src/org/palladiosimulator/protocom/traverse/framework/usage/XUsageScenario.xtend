@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.traverse.framework.usage
 
 import org.palladiosimulator.protocom.traverse.framework.PcmRepresentative
-import de.uka.ipd.sdq.pcm.usagemodel.UsageScenario
+import org.palladiosimulator.pcm.usagemodel.UsageScenario
 
 /**
  * Entry point for transformations of Usage Scenario entities.

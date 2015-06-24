@@ -3,7 +3,7 @@ package org.palladiosimulator.protocom.tech.servlet.repository
 import org.palladiosimulator.protocom.tech.servlet.ServletInterface
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
-import de.uka.ipd.sdq.pcm.repository.InfrastructureInterface
+import org.palladiosimulator.pcm.repository.InfrastructureInterface
 
 /**
  * @author Sebastian Lehrig

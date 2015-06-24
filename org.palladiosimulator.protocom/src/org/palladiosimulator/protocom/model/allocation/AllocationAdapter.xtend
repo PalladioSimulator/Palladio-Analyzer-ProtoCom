@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.model.allocation
 
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.allocation.Allocation
+import org.palladiosimulator.pcm.allocation.Allocation
 
 /**
  * Adapter class for PCM Allocation entities.

@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.seff
 
-import de.uka.ipd.sdq.pcm.seff.InternalAction
+import org.palladiosimulator.pcm.seff.InternalAction
 
 /**
  * @author Christian Klaussner

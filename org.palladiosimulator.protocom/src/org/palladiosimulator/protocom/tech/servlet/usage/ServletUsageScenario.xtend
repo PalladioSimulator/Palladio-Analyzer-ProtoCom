@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.servlet.usage
 
-import de.uka.ipd.sdq.pcm.usagemodel.UsageScenario
+import org.palladiosimulator.pcm.usagemodel.UsageScenario
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.model.usage.UsageScenarioAdapter
 import org.palladiosimulator.protocom.tech.servlet.ServletClass

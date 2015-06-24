@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.model.usage
 
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.usagemodel.UsageScenario
+import org.palladiosimulator.pcm.usagemodel.UsageScenario
 
 /**
  * Adapter class for PCM UsageScenario entities.

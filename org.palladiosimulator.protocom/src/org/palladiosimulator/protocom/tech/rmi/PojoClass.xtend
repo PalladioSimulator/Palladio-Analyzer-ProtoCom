@@ -3,7 +3,7 @@ package org.palladiosimulator.protocom.tech.rmi
 import org.palladiosimulator.protocom.tech.ConceptMapping
 import org.palladiosimulator.protocom.lang.java.IJClass
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
-import de.uka.ipd.sdq.pcm.core.entity.Entity
+import org.palladiosimulator.pcm.core.entity.Entity
 
 /**
  * Common super type for all provider creating Java classes. Defines default values

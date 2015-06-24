@@ -1,9 +1,9 @@
 package org.palladiosimulator.protocom.tech.pojo.repository
 
-import de.uka.ipd.sdq.pcm.repository.BasicComponent
-import de.uka.ipd.sdq.pcm.repository.InfrastructureProvidedRole
-import de.uka.ipd.sdq.pcm.repository.OperationProvidedRole
-import de.uka.ipd.sdq.pcm.seff.ResourceDemandingBehaviour
+import org.palladiosimulator.pcm.repository.BasicComponent
+import org.palladiosimulator.pcm.repository.InfrastructureProvidedRole
+import org.palladiosimulator.pcm.repository.OperationProvidedRole
+import org.palladiosimulator.pcm.seff.ResourceDemandingBehaviour
 import org.palladiosimulator.protocom.lang.java.impl.JField
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.DataTypes

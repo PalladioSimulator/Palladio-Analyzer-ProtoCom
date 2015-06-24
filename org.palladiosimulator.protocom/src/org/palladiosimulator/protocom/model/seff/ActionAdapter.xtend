@@ -1,15 +1,15 @@
 package org.palladiosimulator.protocom.model.seff
 
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.seff.AbstractAction
-import de.uka.ipd.sdq.pcm.seff.StartAction
-import de.uka.ipd.sdq.pcm.seff.StopAction
-import de.uka.ipd.sdq.pcm.seff.BranchAction
-import de.uka.ipd.sdq.pcm.seff.ExternalCallAction
-import de.uka.ipd.sdq.pcm.seff.InternalAction
-import de.uka.ipd.sdq.pcm.seff.ForkAction
-import de.uka.ipd.sdq.pcm.seff.AcquireAction
-import de.uka.ipd.sdq.pcm.seff.ReleaseAction
+import org.palladiosimulator.pcm.seff.AbstractAction
+import org.palladiosimulator.pcm.seff.StartAction
+import org.palladiosimulator.pcm.seff.StopAction
+import org.palladiosimulator.pcm.seff.BranchAction
+import org.palladiosimulator.pcm.seff.ExternalCallAction
+import org.palladiosimulator.pcm.seff.InternalAction
+import org.palladiosimulator.pcm.seff.ForkAction
+import org.palladiosimulator.pcm.seff.AcquireAction
+import org.palladiosimulator.pcm.seff.ReleaseAction
 
 /**
  * @author Christian Klaussner

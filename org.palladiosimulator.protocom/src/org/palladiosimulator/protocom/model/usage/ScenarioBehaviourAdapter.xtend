@@ -1,8 +1,8 @@
 package org.palladiosimulator.protocom.model.usage
 
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.usagemodel.ScenarioBehaviour
-import de.uka.ipd.sdq.pcm.usagemodel.Start
+import org.palladiosimulator.pcm.usagemodel.ScenarioBehaviour
+import org.palladiosimulator.pcm.usagemodel.Start
 
 /**
  * @author Christian Klaussner

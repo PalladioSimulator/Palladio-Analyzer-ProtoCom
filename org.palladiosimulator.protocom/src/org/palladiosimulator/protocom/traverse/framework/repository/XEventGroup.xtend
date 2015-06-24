@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.traverse.framework.repository
 
-import de.uka.ipd.sdq.pcm.repository.EventGroup
+import org.palladiosimulator.pcm.repository.EventGroup
 import org.palladiosimulator.protocom.traverse.framework.PcmRepresentative
 
 /**

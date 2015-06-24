@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.servlet
 
-import de.uka.ipd.sdq.pcm.core.entity.Entity
+import org.palladiosimulator.pcm.core.entity.Entity
 import org.palladiosimulator.protocom.lang.java.IJClass
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.tech.ConceptMapping

@@ -4,11 +4,11 @@ import org.palladiosimulator.protocom.lang.java.IJClass
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.JavaConstants
-import de.uka.ipd.sdq.pcm.repository.OperationProvidedRole
-import de.uka.ipd.sdq.pcm.core.entity.ComposedProvidingRequiringEntity
+import org.palladiosimulator.pcm.repository.OperationProvidedRole
+import org.palladiosimulator.pcm.core.entity.ComposedProvidingRequiringEntity
 import org.palladiosimulator.protocom.lang.java.impl.JField
 import org.palladiosimulator.protocom.lang.java.util.PcmCalls
-import de.uka.ipd.sdq.pcm.repository.OperationRequiredRole
+import org.palladiosimulator.pcm.repository.OperationRequiredRole
 
 /**
  * Common provider for System and CompositeComponent elements.

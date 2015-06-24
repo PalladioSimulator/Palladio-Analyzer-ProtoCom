@@ -1,13 +1,13 @@
 package org.palladiosimulator.protocom.tech.rmi.system
 
-import de.uka.ipd.sdq.pcm.system.System
-import de.uka.ipd.sdq.pcm.repository.OperationProvidedRole
+import org.palladiosimulator.pcm.system.System
+import org.palladiosimulator.pcm.repository.OperationProvidedRole
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.PcmCommons
 import org.palladiosimulator.protocom.lang.java.impl.JField
 import org.palladiosimulator.protocom.lang.java.util.JavaConstants
-import de.uka.ipd.sdq.pcm.repository.InfrastructureProvidedRole
+import org.palladiosimulator.pcm.repository.InfrastructureProvidedRole
 import org.palladiosimulator.protocom.tech.rmi.PojoComposedStructureClass
 
 /**

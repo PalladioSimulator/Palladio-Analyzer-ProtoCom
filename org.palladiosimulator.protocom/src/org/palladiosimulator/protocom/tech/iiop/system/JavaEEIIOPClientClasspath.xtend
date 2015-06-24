@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.iiop.system
 
-import de.uka.ipd.sdq.pcm.repository.BasicComponent
+import org.palladiosimulator.pcm.repository.BasicComponent
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 
 class JavaEEIIOPClientClasspath extends JavaEEIIOPClasspath {

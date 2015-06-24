@@ -1,8 +1,8 @@
 package org.palladiosimulator.protocom.model.resourceenvironment
 
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.resourceenvironment.ResourceContainer
-import de.uka.ipd.sdq.pcm.resourceenvironment.ProcessingResourceSpecification
+import org.palladiosimulator.pcm.resourceenvironment.ResourceContainer
+import org.palladiosimulator.pcm.resourceenvironment.ProcessingResourceSpecification
 
 /**
  * Adapter class for PCM ResourceContainer entities.

@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.servlet
 
-import de.uka.ipd.sdq.pcm.system.System
+import org.palladiosimulator.pcm.system.System
 import org.palladiosimulator.protocom.lang.xml.IJeeSettings
 import org.palladiosimulator.protocom.tech.ConceptMapping
 

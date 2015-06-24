@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.rmi.system
 
-import de.uka.ipd.sdq.pcm.system.System
+import org.palladiosimulator.pcm.system.System
 import org.eclipse.pde.internal.core.PDECore
 import org.palladiosimulator.protocom.tech.rmi.PojoClasspathFile
 

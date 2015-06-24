@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.model.seff
 
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.seff.seff_performance.ParametricResourceDemand
+import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand
 
 /**
  * @author Christian Klaussner

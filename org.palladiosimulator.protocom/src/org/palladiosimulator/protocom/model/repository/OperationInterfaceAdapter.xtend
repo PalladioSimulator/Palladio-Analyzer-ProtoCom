@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.model.repository
 
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.repository.OperationInterface
+import org.palladiosimulator.pcm.repository.OperationInterface
 
 class OperationInterfaceAdapter extends ModelAdapter<OperationInterface> {
 	new(OperationInterface entity) {

@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.tech.servlet.system
 
 import org.palladiosimulator.protocom.tech.servlet.ServletClass
-import de.uka.ipd.sdq.pcm.system.System;
+import org.palladiosimulator.pcm.system.System;
 import org.palladiosimulator.protocom.lang.java.impl.JAnnotation
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.impl.JField

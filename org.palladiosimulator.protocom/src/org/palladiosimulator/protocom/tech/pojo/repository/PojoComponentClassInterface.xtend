@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.tech.pojo.repository
 
-import de.uka.ipd.sdq.pcm.repository.BasicComponent
-import de.uka.ipd.sdq.pcm.repository.OperationProvidedRole
+import org.palladiosimulator.pcm.repository.BasicComponent
+import org.palladiosimulator.pcm.repository.OperationProvidedRole
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.DataTypes
 import org.palladiosimulator.protocom.lang.java.util.JavaNames

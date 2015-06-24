@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.usage
 
-import de.uka.ipd.sdq.pcm.usagemodel.EntryLevelSystemCall
+import org.palladiosimulator.pcm.usagemodel.EntryLevelSystemCall
 import org.palladiosimulator.protocom.model.repository.OperationProvidedRoleAdapter
 import org.palladiosimulator.protocom.model.repository.SignatureAdapter
 

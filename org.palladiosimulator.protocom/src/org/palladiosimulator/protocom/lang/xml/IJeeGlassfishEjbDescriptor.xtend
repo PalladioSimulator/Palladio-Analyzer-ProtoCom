@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.lang.xml
 
-import de.uka.ipd.sdq.pcm.core.composition.AssemblyConnector
+import org.palladiosimulator.pcm.core.composition.AssemblyConnector
 import java.util.HashMap
 
 interface IJeeGlassfishEjbDescriptor extends IJeeDescriptor {

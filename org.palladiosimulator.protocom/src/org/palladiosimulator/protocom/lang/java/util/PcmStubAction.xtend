@@ -1,14 +1,14 @@
 package org.palladiosimulator.protocom.lang.java.util
 
-import de.uka.ipd.sdq.pcm.seff.BranchAction
-import de.uka.ipd.sdq.pcm.seff.CollectionIteratorAction
-import de.uka.ipd.sdq.pcm.seff.ExternalCallAction
-import de.uka.ipd.sdq.pcm.seff.ForkAction
-import de.uka.ipd.sdq.pcm.seff.GuardedBranchTransition
-import de.uka.ipd.sdq.pcm.seff.InternalAction
-import de.uka.ipd.sdq.pcm.seff.LoopAction
-import de.uka.ipd.sdq.pcm.seff.ProbabilisticBranchTransition
-import de.uka.ipd.sdq.pcm.seff.SetVariableAction
+import org.palladiosimulator.pcm.seff.BranchAction
+import org.palladiosimulator.pcm.seff.CollectionIteratorAction
+import org.palladiosimulator.pcm.seff.ExternalCallAction
+import org.palladiosimulator.pcm.seff.ForkAction
+import org.palladiosimulator.pcm.seff.GuardedBranchTransition
+import org.palladiosimulator.pcm.seff.InternalAction
+import org.palladiosimulator.pcm.seff.LoopAction
+import org.palladiosimulator.pcm.seff.ProbabilisticBranchTransition
+import org.palladiosimulator.pcm.seff.SetVariableAction
 
 /**
  * Defines templates for actions of both kinds: SEFF actions and user actions.

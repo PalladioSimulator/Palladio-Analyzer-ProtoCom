@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.tech.iiop
 
 import com.google.common.collect.ArrayListMultimap
-import de.uka.ipd.sdq.pcm.core.entity.Entity
+import org.palladiosimulator.pcm.core.entity.Entity
 import org.palladiosimulator.protocom.lang.txt.IReadMe
 import org.palladiosimulator.protocom.tech.ConceptMapping
 

@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.pojo.repository
 
-import de.uka.ipd.sdq.pcm.repository.InfrastructureInterface
+import org.palladiosimulator.pcm.repository.InfrastructureInterface
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.JavaConstants
 import org.palladiosimulator.protocom.lang.java.util.Parameters

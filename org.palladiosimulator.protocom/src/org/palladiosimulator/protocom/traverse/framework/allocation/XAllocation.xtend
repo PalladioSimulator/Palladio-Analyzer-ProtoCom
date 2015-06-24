@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.traverse.framework.allocation
 
-import de.uka.ipd.sdq.pcm.allocation.Allocation
+import org.palladiosimulator.pcm.allocation.Allocation
 import org.palladiosimulator.protocom.traverse.framework.PcmRepresentative
 
 /**

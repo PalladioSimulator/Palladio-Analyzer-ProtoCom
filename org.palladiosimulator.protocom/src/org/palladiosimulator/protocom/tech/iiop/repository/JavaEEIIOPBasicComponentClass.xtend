@@ -1,8 +1,8 @@
 package org.palladiosimulator.protocom.tech.iiop.repository
 
-import de.uka.ipd.sdq.pcm.core.composition.AssemblyConnector
-import de.uka.ipd.sdq.pcm.repository.BasicComponent
-import de.uka.ipd.sdq.pcm.seff.ResourceDemandingBehaviour
+import org.palladiosimulator.pcm.core.composition.AssemblyConnector
+import org.palladiosimulator.pcm.repository.BasicComponent
+import org.palladiosimulator.pcm.seff.ResourceDemandingBehaviour
 import java.util.List
 import org.palladiosimulator.protocom.lang.java.impl.JField
 import org.palladiosimulator.protocom.lang.java.impl.JMethod

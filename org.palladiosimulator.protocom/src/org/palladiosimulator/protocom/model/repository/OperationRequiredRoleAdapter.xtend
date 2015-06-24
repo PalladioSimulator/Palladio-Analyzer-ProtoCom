@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.model.repository
 
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.repository.OperationRequiredRole
+import org.palladiosimulator.pcm.repository.OperationRequiredRole
 
 /**
  * Adapter class for PCM OperationRequiredRole entities.

@@ -1,15 +1,15 @@
 package org.palladiosimulator.protocom.tech.rmi.repository
 
-import de.uka.ipd.sdq.pcm.repository.ProvidedRole
-import de.uka.ipd.sdq.pcm.repository.OperationProvidedRole
+import org.palladiosimulator.pcm.repository.ProvidedRole
+import org.palladiosimulator.pcm.repository.OperationProvidedRole
 
-import de.uka.ipd.sdq.pcm.repository.InfrastructureProvidedRole
+import org.palladiosimulator.pcm.repository.InfrastructureProvidedRole
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.PcmCommons
 import org.palladiosimulator.protocom.lang.java.util.JavaConstants
 import org.palladiosimulator.protocom.tech.rmi.PojoClass
-import de.uka.ipd.sdq.pcm.repository.SinkRole
+import org.palladiosimulator.pcm.repository.SinkRole
 
 /**
  * Provider for port classes based on provided roles. Please note that InfrastructureProvidedRoles

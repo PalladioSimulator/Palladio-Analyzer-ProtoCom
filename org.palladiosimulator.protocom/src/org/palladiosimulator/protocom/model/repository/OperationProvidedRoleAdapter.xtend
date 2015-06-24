@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.repository
 
-import de.uka.ipd.sdq.pcm.repository.OperationProvidedRole
+import org.palladiosimulator.pcm.repository.OperationProvidedRole
 import org.palladiosimulator.protocom.model.ModelAdapter
 
 /**

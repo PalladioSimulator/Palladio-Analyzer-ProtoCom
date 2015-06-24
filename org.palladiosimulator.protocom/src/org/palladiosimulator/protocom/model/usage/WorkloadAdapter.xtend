@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.model.usage
 
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.usagemodel.Workload
+import org.palladiosimulator.pcm.usagemodel.Workload
 
 /**
  * Abstract base class for PCM Workload adapters.

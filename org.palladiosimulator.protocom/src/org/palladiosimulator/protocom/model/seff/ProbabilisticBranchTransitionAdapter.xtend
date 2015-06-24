@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.seff
 
-import de.uka.ipd.sdq.pcm.seff.ProbabilisticBranchTransition
+import org.palladiosimulator.pcm.seff.ProbabilisticBranchTransition
 
 /**
  * @author Christian Klaussner

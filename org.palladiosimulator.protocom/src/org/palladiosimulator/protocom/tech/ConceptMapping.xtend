@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech
 
-import de.uka.ipd.sdq.pcm.core.entity.NamedElement
+import org.palladiosimulator.pcm.core.entity.NamedElement
 
 /**
  * Subclasses of ConceptMapping are mapping language classes to entity representing ones.

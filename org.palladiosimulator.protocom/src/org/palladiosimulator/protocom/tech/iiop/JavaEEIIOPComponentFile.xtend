@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.iiop
 
-import de.uka.ipd.sdq.pcm.core.entity.Entity
+import org.palladiosimulator.pcm.core.entity.Entity
 import org.palladiosimulator.protocom.lang.xml.IJeeComponentFile
 import org.palladiosimulator.protocom.tech.ConceptMapping
 

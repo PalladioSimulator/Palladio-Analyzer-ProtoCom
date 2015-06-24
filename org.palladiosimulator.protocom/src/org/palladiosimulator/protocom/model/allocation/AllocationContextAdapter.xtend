@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.model.allocation
 
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.allocation.AllocationContext
+import org.palladiosimulator.pcm.allocation.AllocationContext
 import org.palladiosimulator.protocom.model.resourceenvironment.ResourceContainerAdapter
 
 /**

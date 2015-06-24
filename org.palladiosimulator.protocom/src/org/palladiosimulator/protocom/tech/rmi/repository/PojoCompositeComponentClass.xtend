@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.tech.rmi.repository
 
-import de.uka.ipd.sdq.pcm.repository.OperationProvidedRole
-import de.uka.ipd.sdq.pcm.repository.CompositeComponent
+import org.palladiosimulator.pcm.repository.OperationProvidedRole
+import org.palladiosimulator.pcm.repository.CompositeComponent
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.impl.JField

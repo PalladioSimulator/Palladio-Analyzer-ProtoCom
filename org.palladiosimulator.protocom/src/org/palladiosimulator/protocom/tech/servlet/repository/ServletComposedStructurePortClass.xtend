@@ -1,8 +1,8 @@
 package org.palladiosimulator.protocom.tech.servlet.repository
 
-import de.uka.ipd.sdq.pcm.repository.InfrastructureProvidedRole
-import de.uka.ipd.sdq.pcm.repository.OperationProvidedRole
-import de.uka.ipd.sdq.pcm.repository.ProvidedRole
+import org.palladiosimulator.pcm.repository.InfrastructureProvidedRole
+import org.palladiosimulator.pcm.repository.OperationProvidedRole
+import org.palladiosimulator.pcm.repository.ProvidedRole
 import java.util.List
 import org.palladiosimulator.protocom.lang.java.impl.JAnnotation
 import org.palladiosimulator.protocom.lang.java.impl.JField

@@ -1,18 +1,18 @@
 package org.palladiosimulator.protocom.tech.servlet.system
 
-import de.uka.ipd.sdq.pcm.core.entity.ComposedProvidingRequiringEntity
-import de.uka.ipd.sdq.pcm.repository.OperationProvidedRole
-import de.uka.ipd.sdq.pcm.repository.OperationRequiredRole
+import org.palladiosimulator.pcm.core.entity.ComposedProvidingRequiringEntity
+import org.palladiosimulator.pcm.repository.OperationProvidedRole
+import org.palladiosimulator.pcm.repository.OperationRequiredRole
 import org.palladiosimulator.protocom.lang.java.IJClass
 import org.palladiosimulator.protocom.lang.java.impl.JField
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.lang.java.util.PcmCalls
 import org.palladiosimulator.protocom.tech.servlet.ServletClass
-import de.uka.ipd.sdq.pcm.core.composition.AssemblyContext
+import org.palladiosimulator.pcm.core.composition.AssemblyContext
 import org.palladiosimulator.protocom.lang.java.impl.JAnnotation
 import org.palladiosimulator.protocom.lang.java.util.PcmCommons
-import de.uka.ipd.sdq.pcm.core.composition.AssemblyConnector
+import org.palladiosimulator.pcm.core.composition.AssemblyConnector
 import org.palladiosimulator.protocom.model.system.SystemAdapter
 
 class ServletSystemClass<E extends ComposedProvidingRequiringEntity> extends ServletClass<E> implements IJClass {

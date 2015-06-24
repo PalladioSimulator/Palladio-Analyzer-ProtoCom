@@ -2,7 +2,7 @@ package org.palladiosimulator.protocom.tech.rmi.system
 
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
-import de.uka.ipd.sdq.pcm.usagemodel.UsageScenario
+import org.palladiosimulator.pcm.usagemodel.UsageScenario
 import org.palladiosimulator.protocom.lang.java.util.PcmCalls
 import org.palladiosimulator.protocom.tech.rmi.PojoClass
 

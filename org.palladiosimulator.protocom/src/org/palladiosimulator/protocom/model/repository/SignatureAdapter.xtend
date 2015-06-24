@@ -1,9 +1,9 @@
 package org.palladiosimulator.protocom.model.repository
 
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.repository.Signature
-import de.uka.ipd.sdq.pcm.repository.OperationSignature
-import de.uka.ipd.sdq.pcm.repository.InfrastructureSignature
+import org.palladiosimulator.pcm.repository.Signature
+import org.palladiosimulator.pcm.repository.OperationSignature
+import org.palladiosimulator.pcm.repository.InfrastructureSignature
 
 // TODO Create two adapters: OperationSignatureAdapter and InfrastructureSignatureAdapter
 

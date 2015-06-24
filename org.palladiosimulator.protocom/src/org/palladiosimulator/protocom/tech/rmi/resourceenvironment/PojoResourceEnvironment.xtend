@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.rmi.resourceenvironment
 
-import de.uka.ipd.sdq.pcm.resourceenvironment.ResourceEnvironment
+import org.palladiosimulator.pcm.resourceenvironment.ResourceEnvironment
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.tech.ConceptMapping
 import org.palladiosimulator.protocom.lang.java.IJClass

@@ -1,8 +1,8 @@
 package org.palladiosimulator.protocom.tech.rmi.usage
 
-import de.uka.ipd.sdq.pcm.repository.OperationProvidedRole
-import de.uka.ipd.sdq.pcm.usagemodel.Start
-import de.uka.ipd.sdq.pcm.usagemodel.UsageScenario
+import org.palladiosimulator.pcm.repository.OperationProvidedRole
+import org.palladiosimulator.pcm.usagemodel.Start
+import org.palladiosimulator.pcm.usagemodel.UsageScenario
 import org.palladiosimulator.protocom.lang.java.impl.JField
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.JavaNames

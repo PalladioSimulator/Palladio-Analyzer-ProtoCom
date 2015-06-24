@@ -1,10 +1,10 @@
 package org.palladiosimulator.protocom.model.seff
 
-import de.uka.ipd.sdq.pcm.seff.ServiceEffectSpecification
+import org.palladiosimulator.pcm.seff.ServiceEffectSpecification
 import org.palladiosimulator.protocom.model.ModelAdapter
-import de.uka.ipd.sdq.pcm.seff.ResourceDemandingBehaviour
+import org.palladiosimulator.pcm.seff.ResourceDemandingBehaviour
 import org.palladiosimulator.protocom.model.repository.SignatureAdapter
-import de.uka.ipd.sdq.pcm.seff.StartAction
+import org.palladiosimulator.pcm.seff.StartAction
 
 /**
  * Adapter class for PCM ServiceEffectSpecification entities.

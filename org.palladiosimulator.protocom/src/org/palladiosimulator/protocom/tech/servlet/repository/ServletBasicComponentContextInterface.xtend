@@ -1,10 +1,10 @@
 package org.palladiosimulator.protocom.tech.servlet.repository
 
 import org.palladiosimulator.protocom.tech.servlet.ServletInterface
-import de.uka.ipd.sdq.pcm.repository.BasicComponent
+import org.palladiosimulator.pcm.repository.BasicComponent
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
-import de.uka.ipd.sdq.pcm.repository.OperationRequiredRole
+import org.palladiosimulator.pcm.repository.OperationRequiredRole
 
 class ServletBasicComponentContextInterface extends ServletInterface<BasicComponent> {
 	new(BasicComponent pcmEntity) {

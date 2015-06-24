@@ -1,16 +1,16 @@
 package org.palladiosimulator.protocom.lang.java.util
 
-import de.uka.ipd.sdq.pcm.core.entity.Entity
+import org.palladiosimulator.pcm.core.entity.Entity
 import java.util.List
-import de.uka.ipd.sdq.pcm.parameter.VariableUsage
-import de.uka.ipd.sdq.pcm.repository.OperationSignature
-import de.uka.ipd.sdq.pcm.core.composition.ComposedStructure
-import de.uka.ipd.sdq.pcm.repository.ProvidedRole
-import de.uka.ipd.sdq.pcm.core.composition.ProvidedDelegationConnector
-import de.uka.ipd.sdq.pcm.core.composition.Connector
-import de.uka.ipd.sdq.pcm.repository.RequiredRole
-import de.uka.ipd.sdq.pcm.core.composition.RequiredDelegationConnector
-import de.uka.ipd.sdq.pcm.core.composition.AssemblyContext
+import org.palladiosimulator.pcm.parameter.VariableUsage
+import org.palladiosimulator.pcm.repository.OperationSignature
+import org.palladiosimulator.pcm.core.composition.ComposedStructure
+import org.palladiosimulator.pcm.repository.ProvidedRole
+import org.palladiosimulator.pcm.core.composition.ProvidedDelegationConnector
+import org.palladiosimulator.pcm.core.composition.Connector
+import org.palladiosimulator.pcm.repository.RequiredRole
+import org.palladiosimulator.pcm.core.composition.RequiredDelegationConnector
+import org.palladiosimulator.pcm.core.composition.AssemblyContext
 
 /**
  * Common PCM stuff.

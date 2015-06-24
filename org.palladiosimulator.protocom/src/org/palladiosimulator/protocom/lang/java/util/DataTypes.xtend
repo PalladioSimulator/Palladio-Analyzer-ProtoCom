@@ -1,14 +1,14 @@
 package org.palladiosimulator.protocom.lang.java.util
 
-import de.uka.ipd.sdq.pcm.repository.DataType
-import de.uka.ipd.sdq.pcm.repository.PrimitiveDataType
-import de.uka.ipd.sdq.pcm.repository.CollectionDataType
-import de.uka.ipd.sdq.pcm.repository.CompositeDataType
-import de.uka.ipd.sdq.pcm.repository.PrimitiveTypeEnum
-import de.uka.ipd.sdq.pcm.repository.Signature
-import de.uka.ipd.sdq.pcm.repository.OperationSignature
-import de.uka.ipd.sdq.pcm.repository.InfrastructureSignature
-import de.uka.ipd.sdq.pcm.repository.EventType
+import org.palladiosimulator.pcm.repository.DataType
+import org.palladiosimulator.pcm.repository.PrimitiveDataType
+import org.palladiosimulator.pcm.repository.CollectionDataType
+import org.palladiosimulator.pcm.repository.CompositeDataType
+import org.palladiosimulator.pcm.repository.PrimitiveTypeEnum
+import org.palladiosimulator.pcm.repository.Signature
+import org.palladiosimulator.pcm.repository.OperationSignature
+import org.palladiosimulator.pcm.repository.InfrastructureSignature
+import org.palladiosimulator.pcm.repository.EventType
 
 /**
  * Utility class for creating datatype strings. Inspired by the old datatype xpand template.

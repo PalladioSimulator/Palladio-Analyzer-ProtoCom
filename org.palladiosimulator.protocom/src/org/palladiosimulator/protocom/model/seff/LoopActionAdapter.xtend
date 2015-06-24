@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.model.seff
 
-import de.uka.ipd.sdq.pcm.seff.LoopAction
-import de.uka.ipd.sdq.pcm.seff.StartAction
+import org.palladiosimulator.pcm.seff.LoopAction
+import org.palladiosimulator.pcm.seff.StartAction
 
 /**
  * @author Christian Klaussner

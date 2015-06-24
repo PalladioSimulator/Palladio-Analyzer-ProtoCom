@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.tech.pojo.system
 
 import org.palladiosimulator.protocom.tech.rmi.PojoMFFile
-import de.uka.ipd.sdq.pcm.system.System
+import org.palladiosimulator.pcm.system.System
 
 class PojoManifest extends PojoMFFile<System>{
 	
@@ -46,8 +46,8 @@ class PojoManifest extends PojoMFFile<System>{
  org.junit,
  de.uka.ipd.sdq.stoex,
  de.uka.ipd.sdq.stoex.analyser,
- de.uka.ipd.sdq.pcm.stochasticexpressions,
- de.uka.ipd.sdq.pcm,
+ org.palladiosimulator.pcm.stochasticexpressions,
+ org.palladiosimulator.pcm,
  de.uka.ipd.sdq.sensorframework.storage,
  de.uka.ipd.sdq.probfunction.math,
  org.apache.commons.math'''

@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model
 
-import de.uka.ipd.sdq.pcm.core.entity.NamedElement
+import org.palladiosimulator.pcm.core.entity.NamedElement
 import org.eclipse.emf.ecore.EObject
 
 /**

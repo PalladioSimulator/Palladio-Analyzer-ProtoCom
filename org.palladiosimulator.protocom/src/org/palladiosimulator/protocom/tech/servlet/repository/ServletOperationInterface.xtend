@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.tech.servlet.repository
 
 import org.palladiosimulator.protocom.tech.servlet.ServletInterface
-import de.uka.ipd.sdq.pcm.repository.OperationInterface
+import org.palladiosimulator.pcm.repository.OperationInterface
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 

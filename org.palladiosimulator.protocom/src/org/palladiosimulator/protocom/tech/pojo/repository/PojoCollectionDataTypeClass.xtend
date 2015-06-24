@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.tech.pojo.repository
 
-import de.uka.ipd.sdq.pcm.repository.CollectionDataType
+import org.palladiosimulator.pcm.repository.CollectionDataType
 import org.palladiosimulator.protocom.lang.java.util.DataTypes
 import org.palladiosimulator.protocom.lang.java.util.JavaConstants
 import org.palladiosimulator.protocom.tech.rmi.PojoClass

@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.tech.iiop.system
 
-import de.uka.ipd.sdq.pcm.core.composition.AssemblyConnector
-import de.uka.ipd.sdq.pcm.repository.BasicComponent
+import org.palladiosimulator.pcm.core.composition.AssemblyConnector
+import org.palladiosimulator.pcm.repository.BasicComponent
 import java.util.List
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.tech.iiop.JavaEEIIOPClasspathFile

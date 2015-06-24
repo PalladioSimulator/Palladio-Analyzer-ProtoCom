@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.usage
 
-import de.uka.ipd.sdq.pcm.usagemodel.ClosedWorkload
+import org.palladiosimulator.pcm.usagemodel.ClosedWorkload
 
 /**
  * Adapter class for PCM ClosedWorkload entities.

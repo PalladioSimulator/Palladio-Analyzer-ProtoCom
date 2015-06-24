@@ -1,12 +1,12 @@
 package org.palladiosimulator.protocom.tech.rmi.repository
 
-import de.uka.ipd.sdq.pcm.repository.OperationProvidedRole
+import org.palladiosimulator.pcm.repository.OperationProvidedRole
 import org.palladiosimulator.protocom.tech.ConceptMapping
 import org.palladiosimulator.protocom.lang.java.IJInterface
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.JavaConstants
-import de.uka.ipd.sdq.pcm.core.entity.InterfaceProvidingEntity
+import org.palladiosimulator.pcm.core.entity.InterfaceProvidingEntity
 
 /**
  * Defining the content of component implementation interfaces (the interfaces for 

@@ -4,7 +4,7 @@ import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.lang.java.util.PcmCommons
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.JavaConstants
-import de.uka.ipd.sdq.pcm.repository.OperationInterface
+import org.palladiosimulator.pcm.repository.OperationInterface
 import org.palladiosimulator.protocom.tech.rmi.PojoInterface
 
 /**

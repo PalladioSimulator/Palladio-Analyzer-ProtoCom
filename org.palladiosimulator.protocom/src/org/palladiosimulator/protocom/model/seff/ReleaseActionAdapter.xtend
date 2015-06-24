@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.seff
 
-import de.uka.ipd.sdq.pcm.seff.AcquireAction
+import org.palladiosimulator.pcm.seff.AcquireAction
 
 /**
  * @author Sebastian Lehrig

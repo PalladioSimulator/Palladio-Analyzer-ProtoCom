@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.tech.iiop.repository
 
-import de.uka.ipd.sdq.pcm.allocation.AllocationContext
-import de.uka.ipd.sdq.pcm.core.composition.AssemblyConnector
+import org.palladiosimulator.pcm.allocation.AllocationContext
+import org.palladiosimulator.pcm.core.composition.AssemblyConnector
 import java.util.HashMap
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.tech.iiop.JavaEEIIOPDescriptor

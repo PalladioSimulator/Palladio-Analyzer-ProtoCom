@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.model.seff
 
-import de.uka.ipd.sdq.pcm.seff.ForkAction
+import org.palladiosimulator.pcm.seff.ForkAction
 
 /**
  * @author Sebastian Lehrig

@@ -1,8 +1,8 @@
 package org.palladiosimulator.protocom.lang.java.util
 
-import de.uka.ipd.sdq.pcm.usagemodel.Branch
-import de.uka.ipd.sdq.pcm.usagemodel.EntryLevelSystemCall
-import de.uka.ipd.sdq.pcm.usagemodel.Loop
+import org.palladiosimulator.pcm.usagemodel.Branch
+import org.palladiosimulator.pcm.usagemodel.EntryLevelSystemCall
+import org.palladiosimulator.pcm.usagemodel.Loop
 
 /**
  * Defines templates for actions of both kinds: SEFF actions and user actions.
