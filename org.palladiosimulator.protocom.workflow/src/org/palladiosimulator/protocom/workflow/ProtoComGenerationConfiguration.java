@@ -1,6 +1,6 @@
 package org.palladiosimulator.protocom.workflow;
 
-import de.uka.ipd.sdq.workflow.pcm.configurations.AbstractCodeGenerationWorkflowRunConfiguration;
+import org.palladiosimulator.analyzer.workflow.configurations.AbstractCodeGenerationWorkflowRunConfiguration;
 
 public class ProtoComGenerationConfiguration extends AbstractCodeGenerationWorkflowRunConfiguration {
 
