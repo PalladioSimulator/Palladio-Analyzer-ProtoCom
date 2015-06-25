@@ -46,7 +46,7 @@ class PojoManifest extends PojoMFFile<System>{
  org.junit,
  de.uka.ipd.sdq.stoex,
  de.uka.ipd.sdq.stoex.analyser,
- org.palladiosimulator.pcm.stochasticexpressions,
+ de.uka.ipd.sdq.pcm.stochasticexpressions,
  org.palladiosimulator.pcm,
  de.uka.ipd.sdq.sensorframework.storage,
  de.uka.ipd.sdq.probfunction.math,
