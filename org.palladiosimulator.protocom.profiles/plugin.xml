@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.modelversioning.emfprofile.profile">
+      <profile
+            profile_resource="profiles/IIOPServer.emfprofile_diagram">
+      </profile>
+   </extension>
+   <extension
+         point="org.modelversioning.emfprofile.profile">
+      <profile
+            profile_resource="profiles/Stateless.emfprofile_diagram">
+      </profile>
+   </extension>
+</plugin>
