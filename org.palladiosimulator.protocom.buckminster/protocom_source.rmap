@@ -2,8 +2,7 @@
 <rm:rmap xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0" xmlns:rm="http://www.eclipse.org/buckminster/RMap-1.0">
   
   <rm:locator pattern="^org\.palladiosimulator.protocom.*" searchPathRef="ProtoCom" failOnError="true"/>
-  <rm:locator pattern="^com\.sap\..*" searchPathRef="SAP-HANA-Cloud-Tools" failOnError="true"/>
-  
+
   <rm:redirect pattern=".*"
 		href="https://anonymous:anonymous@svnserver.informatik.kit.edu/i43/svn/code/Palladio/Analyzer/ProtoCom/trunk/org.palladiosimulator.protocom.buckminster/protocom.rmap" />
   
@@ -12,12 +11,6 @@
       <rm:uri format="https://anonymous:anonymous@svnserver.informatik.kit.edu/i43/svn/code/Palladio/Analyzer/ProtoCom/trunk/{0}">
         <bc:propertyRef key="buckminster.component"/>
       </rm:uri>
-    </rm:provider>
-  </rm:searchPath>
-  
-  <rm:searchPath name="SAP-HANA-Cloud-Tools">
-    <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
-      <rm:uri format="https://tools.hana.ondemand.com/luna/"/>
     </rm:provider>
   </rm:searchPath>
   
