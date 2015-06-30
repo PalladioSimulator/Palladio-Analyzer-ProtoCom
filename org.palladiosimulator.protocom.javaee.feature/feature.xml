@@ -18,7 +18,7 @@
       <import plugin="org.apache.chemistry.opencmis" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.protocom.resourcestrategies" version="1.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.jst.enterprise_ui.feature" version="3.7.0.v201505131719"/>
-      <import feature="org.eclipse.wst.xml_ui.feature" version="3.7.0.v201505141512"/>
+      <import feature="org.eclipse.jst.web_ui.feature" version="3.7.0.v201506041749"/>
    </requires>
 
    <plugin
