@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rm:rmap xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0" xmlns:rm="http://www.eclipse.org/buckminster/RMap-1.0">
 
-  <rm:locator pattern="^org\.palladiosimulator.protocom.*" searchPathRef="ProtoCom" failOnError="true"/>
+  <rm:locator pattern="^org\.palladiosimulator\.protocom.*" searchPathRef="ProtoCom" failOnError="true"/>
   <rm:locator pattern="^com\.sap\..*" searchPathRef="SAP-HANA-Cloud-Tools" failOnError="true"/>
+  <rm:locator pattern="^org\.eclipse\.jst.*" searchPathRef="SAP-HANA-Cloud-Tools" failOnError="false"/>
   
   <rm:redirect pattern=".*" href="https://anonymous:anonymous@svnserver.informatik.kit.edu/i43/svn/code/Palladio/Analyzer/SimuCom/trunk/org.palladiosimulator.simucom.buckminster/simucom.rmap"/>
   
@@ -17,6 +18,12 @@
   <rm:searchPath name="SAP-HANA-Cloud-Tools">
     <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
       <rm:uri format="https://tools.hana.ondemand.com/luna/"/>
+    </rm:provider>
+  </rm:searchPath>
+  
+  <rm:searchPath name="Eclipse-WebToolsPlatform">
+    <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
+      <rm:uri format="http://download.eclipse.org/webtools/repository/mars"/>
     </rm:provider>
   </rm:searchPath>
   
