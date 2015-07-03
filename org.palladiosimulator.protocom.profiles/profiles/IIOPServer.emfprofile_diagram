@@ -9,13 +9,13 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cEfq0PlTEeODxp3LgMupWQ"
           name="IpAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
           defaultValueLiteral="localhost"/>
-      <extensions xmi:id="_hBXNcPlTEeODxp3LgMupWQ" target="http://palladiosimulator.org/PalladioComponentModel/5.0#//resourceenvironment/ResourceContainer"
+      <extensions xmi:id="_hBXNcPlTEeODxp3LgMupWQ" target="http://palladiosimulator.org/PalladioComponentModel/5.1#//resourceenvironment/ResourceContainer"
           upperBound="1"/>
     </eClassifiers>
   </emfprofile:Profile>
   <notation:Diagram xmi:id="_X4rxsPlTEeODxp3LgMupWQ" type="EMFProfile" element="#_X4lrEPlTEeODxp3LgMupWQ"
       name="IIOPServer.emfprofile_diagram" measurementUnit="Pixel">
-    <children xmi:id="_amBhsPlTEeODxp3LgMupWQ" type="2002" element="http://palladiosimulator.org/PalladioComponentModel/5.0#//resourceenvironment/ResourceContainer">
+    <children xmi:id="_amBhsPlTEeODxp3LgMupWQ" type="2002" element="http://palladiosimulator.org/PalladioComponentModel/5.1#//resourceenvironment/ResourceContainer">
       <eAnnotations xmi:id="_amDW4PlTEeODxp3LgMupWQ" source="Shortcut">
         <details xmi:id="_amDW4flTEeODxp3LgMupWQ" key="modelID" value="EMFProfile"/>
       </eAnnotations>
