@@ -27,7 +27,6 @@ import org.eclipse.xtext.resource.XtextResourceSet;
 import org.eclipse.xtext.ui.containers.WorkspaceProjectsStateHelper;
 import org.eclipse.xtext.ui.editor.DirtyStateManager;
 import org.eclipse.xtext.ui.editor.IDirtyStateManager;
-import org.eclipse.xtext.ui.generator.trace.ExtensibleTraceURIConverter;
 import org.eclipse.xtext.ui.notification.IStateChangeEventBroker;
 import org.eclipse.xtext.ui.notification.StateChangeEventBroker;
 import org.eclipse.xtext.ui.resource.IResourceSetProvider;
@@ -70,10 +69,10 @@ public class CommonConfigurationModule extends AbstractModule {
     private String projectURI = "de.uka.blablabla";
 
     public String getProjectURI() {
-        return projectURI;
+        return this.projectURI;
     }
 
-    public void setProjectURI(String projectURI) {
+    public void setProjectURI(final String projectURI) {
         this.projectURI = projectURI;
     }
 
@@ -89,7 +88,6 @@ public class CommonConfigurationModule extends AbstractModule {
             protected void configure() {
                 bind(ITraceForStorageProvider.class).to(TraceForStorageProvider.class);
                 bind(ITraceURIConverter.class).to(DefaultTraceURIConverter.class);
-                bind(DefaultTraceURIConverter.class).to(ExtensibleTraceURIConverter.class);
 
                 bind(TraceFileNameProvider.class);
                 bind(TraceMarkers.class);
