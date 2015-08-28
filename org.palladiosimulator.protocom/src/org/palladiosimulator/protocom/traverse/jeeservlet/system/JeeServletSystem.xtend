@@ -58,6 +58,12 @@ class JeeServletSystem extends XSystem {
 		
 		files.forEach[
 			var path = "WebContent/" + it.path
+			if (it.url == null) {
+				throw new RuntimeException(
+					"No URL for path " + path +"!" +
+					"Please update org.palladiosimulator.protocom.framework.java.ee/webcontent/index accordingly!"
+				)
+			}
 			var stream = it.url.openStream
 			
 			copiedFiles.add(injector.getInstance(typeof(CopiedFile)).build(path, stream));

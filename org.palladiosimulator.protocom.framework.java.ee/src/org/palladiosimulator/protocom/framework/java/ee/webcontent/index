@@ -78,21 +78,19 @@ lib/org.palladiosimulator.protocom.resourcestrategies.jar -> WEB-INF/lib
 
 # Libraries (Sensor Framework)
 
-lib/de.uka.ipd.sdq.sensorframework_1.1.0.201408041822.jar -> WEB-INF/lib
-lib/de.uka.ipd.sdq.sensorframework.storage_1.0.0.201408041822.jar -> WEB-INF/lib
+lib/de.uka.ipd.sdq.sensorframework_2.0.0.201508110656.jar -> WEB-INF/lib
+lib/de.uka.ipd.sdq.sensorframework.storage_1.0.0.201508110656.jar -> WEB-INF/lib
 
 # Libraries (StoEx)
 
-lib/stoex/de.uka.ipd.sdq.identifier_2.1.0.201408251904.jar -> WEB-INF/lib
-lib/stoex/de.uka.ipd.sdq.pcm.stochasticexpressions_2.0.0.201408261313.jar -> WEB-INF/lib
-lib/stoex/de.uka.ipd.sdq.pcm_3.6.0.201408261313.jar -> WEB-INF/lib
-lib/stoex/de.uka.ipd.sdq.probfunction.math_2.0.2.201408251904.jar -> WEB-INF/lib
-lib/stoex/de.uka.ipd.sdq.probfunction_2.1.0.201408251904.jar -> WEB-INF/lib
-lib/stoex/de.uka.ipd.sdq.simucomframework.variables_1.0.0.201408261313.jar -> WEB-INF/lib
-lib/stoex/de.uka.ipd.sdq.stoex.analyser_2.0.0.201408261313.jar -> WEB-INF/lib
-lib/stoex/de.uka.ipd.sdq.stoex_2.2.0.201408251904.jar -> WEB-INF/lib
-lib/stoex/de.uka.ipd.sdq.units_2.1.0.201408251904.jar -> WEB-INF/lib
-lib/stoex/edu.kit.ipd.sdq.mdsd.profiles_1.0.0.201408251100.jar -> WEB-INF/lib
+lib/stoex/de.uka.ipd.sdq.identifier_2.1.0.201508111340.jar -> WEB-INF/lib
+lib/stoex/de.uka.ipd.sdq.pcm.stochasticexpressions_2.0.0.201508110807.jar -> WEB-INF/lib
+lib/stoex/de.uka.ipd.sdq.probfunction_2.1.0.201508111340.jar -> WEB-INF/lib
+lib/stoex/de.uka.ipd.sdq.probfunction.math_2.0.2.201508111340.jar -> WEB-INF/lib
+lib/stoex/de.uka.ipd.sdq.simucomframework.variables_1.0.0.201508151600.jar -> WEB-INF/lib
+lib/stoex/de.uka.ipd.sdq.stoex_2.2.0.201508111340.jar -> WEB-INF/lib
+lib/stoex/de.uka.ipd.sdq.stoex.analyser_2.0.0.201508110807.jar -> WEB-INF/lib
+lib/stoex/de.uka.ipd.sdq.units_2.1.0.201508111340.jar -> WEB-INF/lib
 lib/stoex/javax.annotation_1.2.0.v201401042248.jar -> WEB-INF/lib
 lib/stoex/org.antlr.runtime_3.2.0.v201101311130.jar -> WEB-INF/lib
 lib/stoex/org.apache.commons.math_2.1.0.v201105210652.jar -> WEB-INF/lib
@@ -111,4 +109,6 @@ lib/stoex/org.eclipse.osgi_3.10.0.v20140606-1445.jar -> WEB-INF/lib
 lib/stoex/org.eclipse.uml2.common_2.0.0.v20140602-0749.jar -> WEB-INF/lib
 lib/stoex/org.eclipse.uml2.types_2.0.0.v20140602-0749.jar -> WEB-INF/lib
 lib/stoex/org.modelversioning.emfprofile_1.1.0.jar -> WEB-INF/lib
+lib/stoex/org.palladiosimulator.mdsdprofiles_1.0.0.201506220815.jar -> WEB-INF/lib
+lib/stoex/org.palladiosimulator.pcm_4.0.0.201508110807.jar -> WEB-INF/lib
 lib/stoex/runtime_registry_compatibility.jar -> WEB-INF/lib

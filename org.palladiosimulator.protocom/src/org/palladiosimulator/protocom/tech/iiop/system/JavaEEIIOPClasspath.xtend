@@ -35,6 +35,7 @@ class JavaEEIIOPClasspath extends JavaEEIIOPClasspathFile<BasicComponent> {
 			<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 			<classpathentry kind="var" path="ECLIPSE_HOME/plugins/de.uka.ipd.sdq.simucomframework.variables_1.0.0.201508151600.jar"/>
 			<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.palladiosimulator.protocom.framework.java.ee_1.0.0.jar"/>
+			<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.palladiosimulator.protocom.framework.java.se_1.0.0.201508111136.jar"/>
 			<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.palladiosimulator.protocom.resourcestrategies_1.0.0.201508111136.jar"/>
 			'''
 	}
