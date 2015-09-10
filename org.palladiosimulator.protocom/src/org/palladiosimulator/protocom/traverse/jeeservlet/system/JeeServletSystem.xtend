@@ -60,7 +60,7 @@ class JeeServletSystem extends XSystem {
 			var path = "WebContent/" + it.path
 			if (it.url == null) {
 				throw new RuntimeException(
-					"No URL for path " + path +"!" +
+					"No URL for path " + path +"! " +
 					"Please update org.palladiosimulator.protocom.framework.java.ee/webcontent/index accordingly!"
 				)
 			}

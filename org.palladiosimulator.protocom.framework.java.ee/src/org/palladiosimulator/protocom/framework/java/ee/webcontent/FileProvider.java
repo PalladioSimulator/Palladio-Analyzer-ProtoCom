@@ -35,6 +35,10 @@ public class FileProvider {
      */
     private FrameworkFile processIndex(final String source, final String path) {
         final URL url = getClass().getResource("files/" + source);
+        if (url == null) {
+            throw new RuntimeException("Could not find file \"" + source + "\"");
+        }
+
         final String absolute = path + '/' + source.substring(source.lastIndexOf('/') + 1);
 
         return new FrameworkFile(url, absolute);
