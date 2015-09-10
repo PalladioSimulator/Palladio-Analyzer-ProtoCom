@@ -3,6 +3,10 @@
 # 
 # Author: Sebastian Lehrig
 
+# Libraries (ProtoCom)
+org.palladiosimulator.protocom.framework.java.ee
+org.palladiosimulator.protocom.resourcestrategies
+
 # Libraries (Sensor Framework)
 
 de.uka.ipd.sdq.sensorframework
