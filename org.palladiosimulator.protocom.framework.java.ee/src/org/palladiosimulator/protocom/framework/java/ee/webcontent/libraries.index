@@ -33,6 +33,7 @@ org.eclipse.core.runtime
 org.eclipse.core.runtime.compatibility.registry
 org.eclipse.emf.common
 org.eclipse.emf.cdo
+org.eclipse.emf.cdo.common
 org.eclipse.emf.ecore.xmi
 org.eclipse.emf.ecore
 org.eclipse.equinox.app
