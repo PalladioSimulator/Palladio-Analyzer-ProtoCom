@@ -3,17 +3,18 @@
 # 
 # Author: Sebastian Lehrig
 
+# Libraries (Palladio)
+org.palladiosimulator.pcm
+
 # Libraries (ProtoCom)
 org.palladiosimulator.protocom.framework.java.ee
 org.palladiosimulator.protocom.resourcestrategies
 
 # Libraries (Sensor Framework)
-
 de.uka.ipd.sdq.sensorframework
 de.uka.ipd.sdq.sensorframework.storage
 
-# Libraries (StoEx)
-
+# Libraries (Commons)
 de.uka.ipd.sdq.identifier
 de.uka.ipd.sdq.pcm.stochasticexpressions
 de.uka.ipd.sdq.probfunction
@@ -22,14 +23,16 @@ de.uka.ipd.sdq.simucomframework.variables
 de.uka.ipd.sdq.stoex
 de.uka.ipd.sdq.stoex.analyser
 de.uka.ipd.sdq.units
-javax.annotation
-org.antlr.runtime
-org.apache.commons.math
+org.modelversioning.emfprofile
+org.palladiosimulator.mdsdprofiles
+
+# Libraries (Eclipse)
 org.eclipse.core.contenttype
 org.eclipse.core.jobs
 org.eclipse.core.runtime
 org.eclipse.core.runtime.compatibility.registry
 org.eclipse.emf.common
+org.eclipse.emf.cdo
 org.eclipse.emf.ecore.xmi
 org.eclipse.emf.ecore
 org.eclipse.equinox.app
@@ -40,7 +43,10 @@ org.eclipse.osgi.compatibility.state
 org.eclipse.osgi
 org.eclipse.uml2.common
 org.eclipse.uml2.types
-org.modelversioning.emfprofile
-org.palladiosimulator.mdsdprofiles
-org.palladiosimulator.pcm
+
+# Libraries (Misc)
+javax.annotation
+org.antlr.runtime
+org.apache.commons.math
+
 
