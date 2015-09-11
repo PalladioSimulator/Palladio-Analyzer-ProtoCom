@@ -21,6 +21,10 @@ public class FrameworkFile {
      *            the destination path, e.g., "img"
      */
     public FrameworkFile(final URL url, final String path) {
+        if (url == null) {
+            throw new RuntimeException("Could not find file \"" + path + "\"");
+        }
+
         this.url = url;
         this.path = path;
     }
