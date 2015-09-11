@@ -28,6 +28,7 @@ org.apache.commons.math
 org.eclipse.core.contenttype
 org.eclipse.core.jobs
 org.eclipse.core.runtime
+org.eclipse.core.runtime.compatibility.registry
 org.eclipse.emf.common
 org.eclipse.emf.ecore.xmi
 org.eclipse.emf.ecore
@@ -42,3 +43,4 @@ org.eclipse.uml2.types
 org.modelversioning.emfprofile
 org.palladiosimulator.mdsdprofiles
 org.palladiosimulator.pcm
+

@@ -22,7 +22,7 @@ public class FrameworkFile {
      */
     public FrameworkFile(final URL url, final String path) {
         if (url == null) {
-            throw new RuntimeException("Could not find file \"" + path + "\"");
+            throw new RuntimeException("Could not find url for path \"" + path + "\"");
         }
 
         this.url = url;
