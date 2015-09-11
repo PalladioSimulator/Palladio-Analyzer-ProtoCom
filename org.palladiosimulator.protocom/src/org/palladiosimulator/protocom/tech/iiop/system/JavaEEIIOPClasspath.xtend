@@ -5,7 +5,6 @@ import org.palladiosimulator.pcm.repository.BasicComponent
 import java.util.List
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.tech.iiop.JavaEEIIOPClasspathFile
-import org.palladiosimulator.commons.eclipseutils.FileHelper
 
 class JavaEEIIOPClasspath extends JavaEEIIOPClasspathFile<BasicComponent> {
 
@@ -39,10 +38,6 @@ class JavaEEIIOPClasspath extends JavaEEIIOPClasspathFile<BasicComponent> {
 			<classpathentry kind="var" path="ECLIPSE_HOME/plugins/«pluginJar("org.palladiosimulator.protocom.framework.java.se")»"/>
 			<classpathentry kind="var" path="ECLIPSE_HOME/plugins/«pluginJar("org.palladiosimulator.protocom.resourcestrategies")»"/>
 			'''
-	}
-	
-	def private pluginJar(String source) {
-		FileHelper.getPluginJarFile(source).getName()
 	}
 
 	override filePath() {
