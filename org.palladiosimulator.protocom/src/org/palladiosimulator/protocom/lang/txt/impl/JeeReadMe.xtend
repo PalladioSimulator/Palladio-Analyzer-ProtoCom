@@ -27,14 +27,6 @@ The "throw RemoteException" has to be removed from the Port classes of the Basic
 	The class «basicComponentPortClass» in the project «projectURI»«basicComponentPortClassProject».
 	«ENDFOR»
 «ENDFOR»
-
-
-At last, you have to make sure that the following .jar files are in the plugins folder of Eclipse:
-de.uka.ipd.sdq.simucomframework.variables_1.0.0.201508151600.jar
-org.palladiosimulator.protocom.framework.java.ee_1.0.0.jar
-org.palladiosimulator.protocom.resourcestrategies_1.0.0.201508111136.jar
-
-They are served with the current Palladio Version 3.5 for Eclipse Kepler.
 '''
 
 	}

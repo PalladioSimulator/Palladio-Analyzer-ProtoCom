@@ -16,6 +16,7 @@ import org.eclipse.osgi.util.ManifestElement;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleException;
 import org.osgi.framework.Constants;
+import org.palladiosimulator.commons.eclipseutils.FileHelper;
 
 /**
  * The FileProvider class is used to retrieve WebContent files during transformation.
@@ -54,7 +55,7 @@ public class FileProvider {
      * @return a file in the framework
      */
     private FrameworkFile processPlugin(final String source) {
-        final File file = getPluginJarFile(source);
+        final File file = FileHelper.getPluginJarFile(source);
         final String absolute = "WEB-INF/lib/" + file.getName();
 
         try {
@@ -111,27 +112,6 @@ public class FileProvider {
             return new BufferedReader(new InputStreamReader(getClass().getResource(file).openStream()));
         } catch (final IOException e) {
             throw new RuntimeException("Index file not found", e);
-        }
-    }
-
-    /**
-     * @see http://www.eclipsezone.com/eclipse/forums/t49415.html
-     * 
-     * @param pluginID
-     *            Plug-in ID for of the Jar file to be loaded
-     * @return the plug-in's Jar file
-     */
-    private File getPluginJarFile(final String pluginID) {
-        final Bundle plugin = Platform.getBundle(pluginID);
-
-        if (plugin == null) {
-            throw new RuntimeException("Plug-In with ID \"" + pluginID + "\" cannot be resolved");
-        }
-
-        try {
-            return FileLocator.getBundleFile(plugin);
-        } catch (final IOException e) {
-            throw new RuntimeException("No access for reading \"" + plugin + "\"");
         }
     }
 
