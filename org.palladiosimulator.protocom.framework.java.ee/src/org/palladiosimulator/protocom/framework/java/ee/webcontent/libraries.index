@@ -49,5 +49,6 @@ org.eclipse.uml2.types
 javax.annotation
 org.antlr.runtime
 org.apache.commons.math
+org.apache.chemistry.opencmis
 
 
