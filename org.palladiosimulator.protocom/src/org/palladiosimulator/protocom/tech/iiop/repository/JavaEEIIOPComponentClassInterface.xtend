@@ -18,7 +18,7 @@ class JavaEEIIOPComponentClassInterface extends JavaEEIIOPInterface<BasicCompone
 	}*/
 	
 	override interfaces() {
-		#["org.palladiosimulator.protocom.framework.se.IPerformancePrototypeComponent"]
+		#["org.palladiosimulator.protocom.framework.java.se.IPerformancePrototypeComponent"]
 	}
 	
 	override methods() {

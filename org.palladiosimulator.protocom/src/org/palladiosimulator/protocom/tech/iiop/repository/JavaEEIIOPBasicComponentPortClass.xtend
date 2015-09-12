@@ -16,7 +16,7 @@ class JavaEEIIOPBasicComponentPortClass extends JavaEEIIOPClass<ProvidedRole> {
 	}
 	
 	override superClass() {
-		'''org.palladiosimulator.protocom.framework.se.port.AbstractPerformancePrototypeBasicPort<«JavaNames::fqnJavaEEComponentPortSuperClass(pcmEntity.providingEntity_ProvidedRole)»>'''
+		'''org.palladiosimulator.protocom.framework.java.se.port.AbstractPerformancePrototypeBasicPort<«JavaNames::fqnJavaEEComponentPortSuperClass(pcmEntity.providingEntity_ProvidedRole)»>'''
 	}
 	
 	override packageName() {
@@ -37,7 +37,7 @@ class JavaEEIIOPBasicComponentPortClass extends JavaEEIIOPClass<ProvidedRole> {
 			new JMethod()
 				.withParameters("String assemblyContext")
 				.withImplementation('''
-					addVisitor(org.palladiosimulator.protocom.framework.se.visitor.SensorFrameworkVisitor.getInstance());
+					addVisitor(org.palladiosimulator.protocom.framework.java.se.visitor.SensorFrameworkVisitor.getInstance());
 					''')
 				.withThrows("java.rmi.RemoteException")
 		]
