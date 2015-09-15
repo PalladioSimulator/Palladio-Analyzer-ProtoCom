@@ -49,6 +49,13 @@
       <import plugin="de.uka.ipd.sdq.simucomframework.variables" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="de.uka.ipd.sdq.probfunction.math" version="2.0.0" match="greaterOrEqual"/>
       <import plugin="javax.servlet" version="3.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.protocom" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.protocom.framework.java.se" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.protocom.framework.java.ee" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.commons" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.ui" version="3.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.filesystem" version="1.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ant.core" version="3.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin
