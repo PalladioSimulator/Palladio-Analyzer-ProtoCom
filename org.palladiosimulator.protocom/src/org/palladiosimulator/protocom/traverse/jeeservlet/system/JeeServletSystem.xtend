@@ -24,8 +24,6 @@ class JeeServletSystem extends XSystem {
 	}
 	
 	override protected generate() {
-		fileProvider.frameworkFiles
-		
 		val adapter = new SystemAdapter(entity)
 		
 		// Generate system interface.
@@ -57,16 +55,11 @@ class JeeServletSystem extends XSystem {
 		var files = fileProvider.frameworkFiles
 		
 		files.forEach[
-			var path = "WebContent/" + it.path
-			if (it.url == null) {
-				throw new RuntimeException(
-					"No URL for path " + path +"! " +
-					"Please update org.palladiosimulator.protocom.framework.java.ee/webcontent/index accordingly!"
-				)
+			if(it.inputFile == null) {
+				copiedFiles.add(injector.getInstance(typeof(CopiedFile)).build("WebContent/" + it.path, it.inputUrl));
+			} else {
+				copiedFiles.add(injector.getInstance(typeof(CopiedFile)).build("WebContent/" + it.path, it.inputFile));
 			}
-			var stream = it.url.openStream
-			
-			copiedFiles.add(injector.getInstance(typeof(CopiedFile)).build(path, stream));
 		]
 		
 		// Generate main class for entry point.

@@ -1,10 +1,8 @@
 package org.palladiosimulator.protocom.framework.java.ee.webcontent;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
@@ -55,14 +53,9 @@ public class FileProvider {
      * @return a file in the framework
      */
     private FrameworkFile processPlugin(final String source) {
-        final File file = FileHelper.getPluginJarFile(source);
-        final String absolute = "WEB-INF/lib/" + file.getName();
+        final String target = "WEB-INF/lib/" + FileHelper.getPluginJarFileName(source);
 
-        try {
-            return new FrameworkFile(file.toURI().toURL(), absolute);
-        } catch (final MalformedURLException e) {
-            throw new RuntimeException("Cannot convert file \"" + file + "\" to URL (malformed)");
-        }
+        return new FrameworkFile(FileHelper.getPluginJarFile(source), target);
     }
 
     /**

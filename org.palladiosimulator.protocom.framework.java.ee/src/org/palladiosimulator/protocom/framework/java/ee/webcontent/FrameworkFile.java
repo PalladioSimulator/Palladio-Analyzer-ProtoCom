@@ -1,5 +1,6 @@
 package org.palladiosimulator.protocom.framework.java.ee.webcontent;
 
+import java.io.File;
 import java.net.URL;
 
 /**
@@ -9,7 +10,9 @@ import java.net.URL;
  */
 public class FrameworkFile {
 
-    private final URL url;
+    private final File inputFile;
+    private final URL inputURL;
+
     private final String path;
 
     /**
@@ -20,12 +23,31 @@ public class FrameworkFile {
      * @param path
      *            the destination path, e.g., "img"
      */
-    public FrameworkFile(final URL url, final String path) {
-        if (url == null) {
-            throw new RuntimeException("Could not find url for path \"" + path + "\"");
+    public FrameworkFile(final URL inputURL, final String path) {
+        if (inputURL == null) {
+            throw new RuntimeException("Could not find URL for path \"" + path + "\"");
         }
 
-        this.url = url;
+        this.inputFile = null;
+        this.inputURL = inputURL;
+        this.path = path;
+    }
+
+    /**
+     * Constructs a new FrameworkFile object.
+     * 
+     * @param url
+     *            the source URL, e.g., URL("img/favicon.png")
+     * @param path
+     *            the destination path, e.g., "img"
+     */
+    public FrameworkFile(final File inputFile, final String path) {
+        if (inputFile == null) {
+            throw new RuntimeException("Could not find file for path \"" + path + "\"");
+        }
+
+        this.inputFile = inputFile;
+        this.inputURL = null;
         this.path = path;
     }
 
@@ -34,8 +56,17 @@ public class FrameworkFile {
      * 
      * @return the source URL
      */
-    public URL getUrl() {
-        return this.url;
+    public File getInputFile() {
+        return this.inputFile;
+    }
+
+    /**
+     * Gets the source URL.
+     * 
+     * @return the source URL
+     */
+    public URL getInputUrl() {
+        return this.inputURL;
     }
 
     /**

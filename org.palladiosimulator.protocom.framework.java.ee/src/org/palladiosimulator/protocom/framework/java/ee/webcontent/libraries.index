@@ -30,7 +30,6 @@ org.palladiosimulator.mdsdprofiles
 org.eclipse.core.contenttype
 org.eclipse.core.jobs
 org.eclipse.core.runtime
-org.eclipse.core.runtime.compatibility.registry
 org.eclipse.emf.common
 org.eclipse.emf.cdo
 org.eclipse.emf.cdo.common
@@ -50,5 +49,3 @@ javax.annotation
 org.antlr.runtime
 org.apache.commons.math
 org.apache.chemistry.opencmis
-
-
