@@ -7,7 +7,6 @@ import org.palladiosimulator.protocom.lang.prefs.impl.JeePreferences
 import org.palladiosimulator.protocom.lang.xml.impl.JeeComponentFile
 import org.palladiosimulator.protocom.lang.xml.impl.JeeEjbDescriptor
 import org.palladiosimulator.protocom.lang.xml.impl.JeeFacetCore
-import org.palladiosimulator.protocom.lang.xml.impl.JeeGlassfishEjbDescriptor
 import org.palladiosimulator.protocom.tech.iiop.repository.JavaEEIIOPBasicComponentPortClass
 import org.palladiosimulator.protocom.tech.iiop.repository.JavaEEIIOPClientFacetCore
 import org.palladiosimulator.protocom.tech.iiop.repository.JavaEEIIOPClientManifest
@@ -17,7 +16,6 @@ import org.palladiosimulator.protocom.tech.iiop.repository.JavaEEIIOPEclipseClie
 import org.palladiosimulator.protocom.tech.iiop.repository.JavaEEIIOPEclipseComponentFile
 import org.palladiosimulator.protocom.tech.iiop.repository.JavaEEIIOPEjbDescriptor
 import org.palladiosimulator.protocom.tech.iiop.repository.JavaEEIIOPFacetCore
-import org.palladiosimulator.protocom.tech.iiop.repository.JavaEEIIOPGlassfishEjbDescriptor
 import org.palladiosimulator.protocom.tech.iiop.repository.JavaEEIIOPManifest
 import org.palladiosimulator.protocom.tech.iiop.repository.JavaEEIIOPOperationInterface
 import org.palladiosimulator.protocom.tech.iiop.repository.JavaEEIIOPPreferences

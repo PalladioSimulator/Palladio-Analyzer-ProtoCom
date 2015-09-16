@@ -1,7 +1,6 @@
 package org.palladiosimulator.protocom.tech.servlet.system
 
 import org.palladiosimulator.pcm.core.entity.ComposedProvidingRequiringEntity
-import org.palladiosimulator.pcm.repository.OperationProvidedRole
 import org.palladiosimulator.pcm.repository.OperationRequiredRole
 import org.palladiosimulator.protocom.lang.java.IJClass
 import org.palladiosimulator.protocom.lang.java.impl.JField
@@ -9,7 +8,6 @@ import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.lang.java.util.PcmCalls
 import org.palladiosimulator.protocom.tech.servlet.ServletClass
-import org.palladiosimulator.pcm.core.composition.AssemblyContext
 import org.palladiosimulator.protocom.lang.java.impl.JAnnotation
 import org.palladiosimulator.protocom.lang.java.util.PcmCommons
 import org.palladiosimulator.pcm.core.composition.AssemblyConnector
