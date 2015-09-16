@@ -27,6 +27,11 @@ The "throw RemoteException" has to be removed from the Port classes of the Basic
 	The class «basicComponentPortClass» in the project «projectURI»«basicComponentPortClassProject».
 	«ENDFOR»
 «ENDFOR»
+
+Also note that the current EJB ProtoType is tied to a Glassfish 4 runtime environment. We currently require to have such an
+environment with the name "GlassFish 4" installed. Check your Eclipse settings under "Server -> Runtime Environments" to
+check this requirement. In future versions, we plan to parametrize the target runtime; see:
+org.palladiosimulator.protocom/src/org/palladiosimulator/protocom/tech/iiop/repository/JavaEEIIOPFacetCore.xtend
 '''
 
 	}
