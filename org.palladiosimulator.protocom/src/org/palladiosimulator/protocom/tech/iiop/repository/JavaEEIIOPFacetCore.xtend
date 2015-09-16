@@ -11,7 +11,7 @@ class JavaEEIIOPFacetCore extends JavaEEIIOPFacetCoreFile<BasicComponent>{
 	}
 	
 	override runtimeName() {
-		"GlassFish 3.1" // FIXME refactored from 4.0 to 3.1 for testing
+		"GlassFish 4" // FIXME Make target runtime selectable
 	}
 	
 	
@@ -28,7 +28,7 @@ class JavaEEIIOPFacetCore extends JavaEEIIOPFacetCoreFile<BasicComponent>{
 	}
 	
 	override filePath() {
-		JavaNames::fqnJavaEEPreferencesPath(pcmEntity) + "org.eclipse.wst.prototype.project.facet.core.xml"
+		JavaNames::fqnJavaEEPreferencesPath(pcmEntity) + "org.eclipse.wst.common.project.facet.core.xml"
 	}
 	
 	override projectName() {
