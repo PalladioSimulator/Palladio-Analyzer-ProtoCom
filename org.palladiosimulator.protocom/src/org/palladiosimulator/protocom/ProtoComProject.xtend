@@ -172,10 +172,13 @@ class ProtoComProject {
 						failed = true;
 					}
 				}
-				if (failed)
-					throw new JobFailedException(
-							"Unable to build the simulation plugin. Failure Messages: "
-									+ errorList);
+				if (failed) {
+					LOGGER.error("Unable to build a simulation plug-in; trying to continue. Failure Messages: "
+									+ errorList)
+					/*throw new JobFailedException(
+							"Unable to build the simulation plug-in. Failure Messages: "
+									+ errorList);*/
+				}
 			}
 		} catch (CoreException e) {
 			throw new JobFailedException(
