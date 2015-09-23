@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.Random;
 
 import org.palladiosimulator.protocom.resourcestrategies.activeresource.AbstractDemandStrategy;
-import org.palladiosimulator.protocom.resourcestrategies.activeresource.CalibrationTable;
 import org.palladiosimulator.protocom.resourcestrategies.activeresource.ResourceTypeEnum;
 
 public class SortArrayDemand extends AbstractDemandStrategy {
@@ -21,13 +20,13 @@ public class SortArrayDemand extends AbstractDemandStrategy {
      */
     private static final int SEED = 1234;
 
-    public SortArrayDemand(int arraySize) {
+    public SortArrayDemand(final int arraySize) {
         super(-3, 0, 3, 10000, 50);
         this.arraySize = arraySize;
-        values = new double[this.arraySize];
-        Random r = new Random(SEED);
-        for (int i = 0; i < values.length; i++) {
-            values[i] = r.nextDouble();
+        this.values = new double[this.arraySize];
+        final Random r = new Random(SEED);
+        for (int i = 0; i < this.values.length; i++) {
+            this.values[i] = r.nextDouble();
         }
     }
 
@@ -35,23 +34,23 @@ public class SortArrayDemand extends AbstractDemandStrategy {
         this(DEFAULT_ARRAY_SIZE);
     }
 
-    private void sortArray(int amountOfNumbers) {
-        int iterations = amountOfNumbers / this.arraySize;
-        int rest = amountOfNumbers % this.arraySize;
+    private void sortArray(final int amountOfNumbers) {
+        final int iterations = amountOfNumbers / this.arraySize;
+        final int rest = amountOfNumbers % this.arraySize;
         for (int i = 0; i < iterations; i++) {
-            double[] lotsOfDoubles = getArray(this.arraySize);
+            final double[] lotsOfDoubles = getArray(this.arraySize);
             Arrays.sort(lotsOfDoubles);
         }
-        double[] lotsOfDoubles = getArray(rest);
+        final double[] lotsOfDoubles = getArray(rest);
         Arrays.sort(lotsOfDoubles);
     }
 
-    private double[] getArray(int amountOfNumbers) {
-        return Arrays.copyOf(values, amountOfNumbers);
+    private double[] getArray(final int amountOfNumbers) {
+        return Arrays.copyOf(this.values, amountOfNumbers);
     }
 
     @Override
-    public void run(long initial) {
+    public void run(final long initial) {
         sortArray((int) initial);
     }
 
@@ -66,13 +65,14 @@ public class SortArrayDemand extends AbstractDemandStrategy {
     }
 
     // TODO: Check if array size is really needed in file name.
-    // This doesn't work anymore because calibration file handling has been moved to AbstractResourceEnvironment.
-    
-    /*@Override
-    protected String getCalibrationFileName() {
-        return getCalibrationPath() + "/" + getName() + "_" + CalibrationTable.DEFAULT_CALIBRATION_TABLE_SIZE + "_"
-                + this.arraySize + "_" + this.degreeOfAccuracy.name() + ".ser";
-    }*/
+    // This doesn't work anymore because calibration file handling has been moved to
+    // AbstractResourceEnvironment.
+
+    /*
+     * @Override protected String getCalibrationFileName() { return getCalibrationPath() + "/" +
+     * getName() + "_" + CalibrationTable.DEFAULT_CALIBRATION_TABLE_SIZE + "_" + this.arraySize +
+     * "_" + this.degreeOfAccuracy.name() + ".ser"; }
+     */
 
     @Override
     public void cleanup() {

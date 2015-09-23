@@ -16,8 +16,6 @@ import javax.measure.quantity.Duration;
 
 import org.apache.log4j.Logger;
 import org.jscience.physics.amount.Amount;
-import org.palladiosimulator.protocom.resourcestrategies.activeresource.CalibrationEntry;
-import org.palladiosimulator.protocom.resourcestrategies.activeresource.CalibrationTable;
 
 /**
  * Struct to represent a single entry in the calibration table of the load generators. It is a tuple
@@ -27,6 +25,7 @@ import org.palladiosimulator.protocom.resourcestrategies.activeresource.Calibrat
  *
  */
 class CalibrationEntry implements Serializable {
+
     private static final long serialVersionUID = -1969713798721640687L;
 
     final private Amount<Duration> targetTime;
@@ -42,7 +41,7 @@ class CalibrationEntry implements Serializable {
      *            The load generator's parameter for which the algorithm runs targetTime
      *            milliseconds
      */
-    public CalibrationEntry(Amount<Duration> targetTime, long parameter) {
+    public CalibrationEntry(final Amount<Duration> targetTime, final long parameter) {
         super();
         this.targetTime = targetTime;
         this.parameter = parameter;
@@ -52,19 +51,19 @@ class CalibrationEntry implements Serializable {
      * @return Target time in ms
      */
     public Amount<Duration> getTargetTime() {
-        return targetTime;
+        return this.targetTime;
     }
 
     /**
      * @return Algorithm's parameter for which the algorithm runs target time milliseconds
      */
     public long getParameter() {
-        return parameter;
+        return this.parameter;
     }
 
     @Override
     public String toString() {
-        return AbstractDemandStrategy.formatDuration(targetTime) + "\t | \t" + parameter;
+        return AbstractDemandStrategy.formatDuration(this.targetTime) + "\t | \t" + this.parameter;
     }
 }
 
@@ -86,7 +85,7 @@ public class CalibrationTable {
      * Private constructor. Used when created by loading an existing calibration table.
      */
     public CalibrationTable() {
-        table = new CalibrationEntry[DEFAULT_CALIBRATION_TABLE_SIZE];
+        this.table = new CalibrationEntry[DEFAULT_CALIBRATION_TABLE_SIZE];
     }
 
     /**
@@ -95,8 +94,8 @@ public class CalibrationTable {
      * @param tableSize
      *            size of the calibration table
      */
-    public CalibrationTable(int tableSize) {
-        table = new CalibrationEntry[tableSize];
+    public CalibrationTable(final int tableSize) {
+        this.table = new CalibrationEntry[tableSize];
     }
 
     /**
@@ -104,7 +103,7 @@ public class CalibrationTable {
      * 
      * @return The loaded calibration file or null if the file could not be loaded
      */
-    public static CalibrationTable load(File configFile) {
+    public static CalibrationTable load(final File configFile) {
         CalibrationTable calibrationTable = null;
 
         // tests whether the calibration file exists and can be loaded
@@ -116,23 +115,24 @@ public class CalibrationTable {
             InputStream fis = null;
             try {
                 fis = new FileInputStream(configFile);
-                ObjectInputStream o = new ObjectInputStream(fis);
+                final ObjectInputStream o = new ObjectInputStream(fis);
                 calibrationTable.setTable((CalibrationEntry[]) o.readObject());
-            } catch (IOException e) {
+                o.close();
+            } catch (final IOException e) {
                 LOGGER.error("Error while loading " + configFile, e);
                 throw new RuntimeException(e);
 
-            } catch (ClassNotFoundException e) {
+            } catch (final ClassNotFoundException e) {
                 LOGGER.error("Error while reading " + configFile, e);
                 throw new RuntimeException(e);
-            } catch (Exception e) {
+            } catch (final Exception e) {
                 LOGGER.error("Error while reading " + configFile, e);
                 throw new RuntimeException(e);
 
             } finally {
                 try {
                     fis.close();
-                } catch (Exception e) {
+                } catch (final Exception e) {
                     throw new RuntimeException(e);
                 }
             }
@@ -148,36 +148,37 @@ public class CalibrationTable {
      * Saves calibration to config file. Config file uses a Java object stream to serialise the
      * calibration table.
      */
-    public void save(File configFile) {
+    public void save(final File configFile) {
         LOGGER.info("Saving calibration to '" + configFile + "'");
         OutputStream fos = null;
         try {
             fos = new FileOutputStream(configFile);
 
-            ObjectOutputStream o = new ObjectOutputStream(fos);
-            o.writeObject(table);
-
-        } catch (IOException e) {
+            final ObjectOutputStream o = new ObjectOutputStream(fos);
+            o.writeObject(this.table);
+            o.close();
+        } catch (final IOException e) {
             LOGGER.error("Error while writing calibration data", e);
         } finally {
             try {
                 fos.close();
-            } catch (Exception e) {
+            } catch (final Exception e) {
             }
         }
     }
-    
+
     /**
      * Serializes the calibration table to a byte array.
+     * 
      * @return a byte array containing the serialized calibration table
      */
     public byte[] toBinary() {
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        final ByteArrayOutputStream out = new ByteArrayOutputStream();
 
         try {
-            ObjectOutputStream stream = new ObjectOutputStream(out);
-            stream.writeObject(table);
-        } catch (IOException e) {
+            final ObjectOutputStream stream = new ObjectOutputStream(out);
+            stream.writeObject(this.table);
+        } catch (final IOException e) {
             e.printStackTrace();
         }
 
@@ -186,30 +187,31 @@ public class CalibrationTable {
 
     /**
      * Creates a calibration table from a byte array.
-     * @param binary a byte array containing the serialized calibration table
+     * 
+     * @param binary
+     *            a byte array containing the serialized calibration table
      * @return a new CalibrationTable object
      */
-    public static CalibrationTable fromBinary(byte[] binary) {
-        CalibrationTable result = new CalibrationTable();
+    public static CalibrationTable fromBinary(final byte[] binary) {
+        final CalibrationTable result = new CalibrationTable();
         CalibrationEntry[] table = null;
 
-        ByteArrayInputStream in = new ByteArrayInputStream(binary);
+        final ByteArrayInputStream in = new ByteArrayInputStream(binary);
 
         try {
-            ObjectInputStream stream = new ObjectInputStream(in);
+            final ObjectInputStream stream = new ObjectInputStream(in);
             table = (CalibrationEntry[]) stream.readObject();
             result.setTable(table);
-        } catch (IOException e) {
+        } catch (final IOException e) {
             e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (final ClassNotFoundException e) {
             e.printStackTrace();
         }
 
         return result;
     }
 
-
-    private void setTable(CalibrationEntry[] table) {
+    private void setTable(final CalibrationEntry[] table) {
         this.table = table;
     }
 
@@ -219,8 +221,8 @@ public class CalibrationTable {
      * @param entryNumber
      * @return
      */
-    public CalibrationEntry getEntry(int entryNumber) {
-        return table[entryNumber];
+    public CalibrationEntry getEntry(final int entryNumber) {
+        return this.table[entryNumber];
     }
 
     /**
@@ -231,8 +233,8 @@ public class CalibrationTable {
      * @param targetTime
      * @param parameter
      */
-    public void addEntry(int entryNumber, Amount<Duration> targetTime, long parameter) {
-        table[entryNumber] = new CalibrationEntry(targetTime, parameter);
+    public void addEntry(final int entryNumber, final Amount<Duration> targetTime, final long parameter) {
+        this.table[entryNumber] = new CalibrationEntry(targetTime, parameter);
     }
 
     /**
@@ -241,7 +243,7 @@ public class CalibrationTable {
      * @return
      */
     public int size() {
-        return table.length;
+        return this.table.length;
     }
 
 }

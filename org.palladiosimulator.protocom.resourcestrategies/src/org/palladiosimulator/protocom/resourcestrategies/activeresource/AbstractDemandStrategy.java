@@ -382,6 +382,7 @@ public abstract class AbstractDemandStrategy implements IDemandStrategy {
      */
     private long getRootOnce(final Amount<Duration> targetTime) {
         final long[] intervalEndpoints = new long[2];
+        @SuppressWarnings("unchecked")
         final Amount<Duration>[] intervalFunctionValues = new Amount[2];
         initialiseInterval(targetTime, intervalEndpoints, intervalFunctionValues);
         if (!hasRoot(intervalFunctionValues[LEFT_ENDPOINT], intervalFunctionValues[RIGHT_ENDPOINT])
@@ -389,8 +390,8 @@ public abstract class AbstractDemandStrategy implements IDemandStrategy {
             LOGGER.error("PROBLEM: No root found. Special algorithm" + " without monotonically increasing load !?!");
             LOGGER.error("f_n_left = " + intervalFunctionValues[LEFT_ENDPOINT]);
             LOGGER.error("f_n_right = " + intervalFunctionValues[RIGHT_ENDPOINT]);
-            throw new RuntimeException("PROBLEM: No root found. Special algorithm"
-                    + " without monotonically increasing load !?!");
+            throw new RuntimeException(
+                    "PROBLEM: No root found. Special algorithm" + " without monotonically increasing load !?!");
         }
 
         LOGGER.debug("--- Running bisection method ----");
@@ -405,7 +406,8 @@ public abstract class AbstractDemandStrategy implements IDemandStrategy {
             }
             final long intervalMedian = (intervalEndpoints[LEFT_ENDPOINT] + intervalEndpoints[RIGHT_ENDPOINT]) / 2;
             final Amount<Duration> f_n_median = calcRunTimeFunction(intervalMedian, targetTime);
-            if (hasSameSign(intervalFunctionValues[LEFT_ENDPOINT].getEstimatedValue(), f_n_median.getEstimatedValue())) {
+            if (hasSameSign(intervalFunctionValues[LEFT_ENDPOINT].getEstimatedValue(),
+                    f_n_median.getEstimatedValue())) {
                 intervalEndpoints[LEFT_ENDPOINT] = intervalMedian;
                 intervalFunctionValues[LEFT_ENDPOINT] = f_n_median;
             } else {
@@ -598,8 +600,8 @@ public abstract class AbstractDemandStrategy implements IDemandStrategy {
         for (int i = CalibrationTable.DEFAULT_CALIBRATION_TABLE_SIZE - 1; i >= 0; i--) {
             final CalibrationEntry calibrationEntry = this.calibrationTable.getEntry(i);
 
-            result[i] = (long) Math.floor((sum.divide(calibrationEntry.getTargetTime())).to(Unit.ONE)
-                    .getEstimatedValue());
+            result[i] = (long) Math
+                    .floor((sum.divide(calibrationEntry.getTargetTime())).to(Unit.ONE).getEstimatedValue());
             if (result[i] >= 1) {
                 sum = sum.minus(calibrationEntry.getTargetTime().times(result[i]));
             }

@@ -21,6 +21,7 @@ public final class SystemResourcesUtil {
      * import (Forbidden references), so you might have to change your preferences (Java -> Compiler
      * -> Errors/Warnings -> Forbidden references)
      */
+    @SuppressWarnings("restriction")
     private static final com.sun.management.OperatingSystemMXBean OS = (com.sun.management.OperatingSystemMXBean) ManagementFactory
             .getOperatingSystemMXBean();
 
@@ -28,14 +29,15 @@ public final class SystemResourcesUtil {
      * This systems' temp directory. Due to inconsistencies between different systems a file
      * separator is added.
      */
-    public static final File TEMP_DIR = new File(System.getProperty("java.io.tmpdir")
-            + System.getProperty("file.separator") + "ProtoCom");
+    public static final File TEMP_DIR = new File(
+            System.getProperty("java.io.tmpdir") + System.getProperty("file.separator") + "ProtoCom");
 
     /**
      * Returns the total size of the physical memory in bytes.
      * 
      * @return total memory in bytes
      */
+    @SuppressWarnings("restriction")
     public static long getTotalPhysicalMemorySize() {
         return OS.getTotalPhysicalMemorySize();
     }
@@ -45,6 +47,7 @@ public final class SystemResourcesUtil {
      * 
      * @return free memory in bytes
      */
+    @SuppressWarnings("restriction")
     public static long getFreePhysicalMemorySize() {
         return OS.getFreePhysicalMemorySize();
     }
@@ -72,6 +75,7 @@ public final class SystemResourcesUtil {
      * 
      * @return CPU usage in nanoseconds
      */
+    @SuppressWarnings("restriction")
     public static double getCPUProcessTimeNS() {
         return OS.getProcessCpuTime();
     }
