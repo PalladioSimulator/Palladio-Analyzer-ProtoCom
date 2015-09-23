@@ -114,7 +114,7 @@ class JavaEEIIOPBasicComponentClass extends JavaEEIIOPClass<BasicComponent> {
 			results += #[
 				new JField().withName(JavaNames::javaName(assemblyConnector.requiredRole_AssemblyConnector).toFirstLower).
 					withType(
-						JavaNames::javaName(assemblyProvidedRole.providingEntity_ProvidedRole).toFirstLower +
+						JavaNames::javaName(assemblyProvidedRole.providingEntity_ProvidedRole).toLowerCase +
 							".interfaces.ejb." +
 							JavaNames::javaName(assemblyProvidedRole.providedInterface__OperationProvidedRole))
 			]
