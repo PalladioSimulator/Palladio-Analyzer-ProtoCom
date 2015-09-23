@@ -25,8 +25,12 @@ class JeeClasspath extends GeneratedFile<IJeeClasspath> implements IJeeClasspath
 		'''
 <classpath>
 	«classPathEntries»
-	«IF clientClassPathEntry != null»<classpathentry combineaccessrules="false" kind="src" path="/«projectURI».«clientClassPathEntry»"/>«ENDIF»
-	«FOR requiredProject : requiredClientProjects»<classpathentry combineaccessrules="false" kind="src" path="/«projectURI».«requiredProject»"/>«ENDFOR»
+	«IF clientClassPathEntry != null»
+	<classpathentry combineaccessrules="false" kind="src" path="/«projectURI».«clientClassPathEntry»"/>
+	«ENDIF»
+	«FOR requiredProject : requiredClientProjects»
+	<classpathentry combineaccessrules="false" kind="src" path="/«projectURI».«requiredProject»"/>
+	«ENDFOR»
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>'''
 	}

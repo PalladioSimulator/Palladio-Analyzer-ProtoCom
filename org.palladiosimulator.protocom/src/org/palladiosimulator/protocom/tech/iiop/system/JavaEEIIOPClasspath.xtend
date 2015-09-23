@@ -55,7 +55,7 @@ class JavaEEIIOPClasspath extends JavaEEIIOPClasspathFile<BasicComponent> {
 	override requiredClientProjects() {
 		val basicComponentAssemblyConnectors = assemblyConnector.filter[
 			it.requiredRole_AssemblyConnector.requiringEntity_RequiredRole.equals(pcmEntity)]
-		val results = newLinkedList
+		val results = newHashSet()
 
 		for (assemblyConnector : basicComponentAssemblyConnectors) {
 			var assemblyProvidedRole = assemblyConnector.providedRole_AssemblyConnector

@@ -35,6 +35,6 @@ class JavaEEIIOPClientClasspath extends JavaEEIIOPClasspath {
 	}
 
 	override requiredClientProjects() {
-		newLinkedList
+		newHashSet()
 	}
 }

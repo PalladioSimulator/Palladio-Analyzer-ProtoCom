@@ -1,11 +1,11 @@
 package org.palladiosimulator.protocom.lang.xml
 
-import java.util.List
+import java.util.Set
 
 interface IJeeClasspath extends IClasspath {
 	
 	def String clientClassPathEntry()
 	
-	def List <String> requiredClientProjects()
+	def Set <String> requiredClientProjects()
 	
 	}
