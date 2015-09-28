@@ -3,7 +3,7 @@ package org.palladiosimulator.protocom.tech.iiop.repository
 import org.palladiosimulator.pcm.core.composition.AssemblyConnector
 import org.palladiosimulator.pcm.repository.BasicComponent
 import org.palladiosimulator.pcm.seff.ResourceDemandingBehaviour
-import java.util.List
+
 import org.palladiosimulator.protocom.lang.java.impl.JField
 import org.palladiosimulator.protocom.lang.java.impl.JMethod
 import org.palladiosimulator.protocom.lang.java.util.JavaConstants
@@ -12,19 +12,20 @@ import org.palladiosimulator.protocom.lang.java.util.PcmCommons
 import org.palladiosimulator.protocom.tech.iiop.JavaEEIIOPClass
 import org.palladiosimulator.protocom.tech.iiop.util.PcmIIOPProtoAction
 import org.palladiosimulator.mdsdprofiles.api.StereotypeAPI
+import java.util.Set
 
 class JavaEEIIOPBasicComponentClass extends JavaEEIIOPClass<BasicComponent> {
 
-	List<AssemblyConnector> assemblyConnector
+	Set<AssemblyConnector> assemblyConnectors
 	
 
 	new(BasicComponent pcmEntity) {
 		super(pcmEntity)
 	}
 
-	new(BasicComponent pcmEntity, List<AssemblyConnector> assemblyConnectors) {
+	new(BasicComponent pcmEntity, Set<AssemblyConnector> assemblyConnectors) {
 		super(pcmEntity)
-		this.assemblyConnector = assemblyConnectors
+		this.assemblyConnectors = assemblyConnectors
 	}
 
 	override interfaces() {
@@ -105,7 +106,7 @@ class JavaEEIIOPBasicComponentClass extends JavaEEIIOPClass<BasicComponent> {
 	}
 
 	override jeeClassDependencyInjection() {
-		val basicComponentAssemblyConnectors = assemblyConnector.filter[
+		val basicComponentAssemblyConnectors = assemblyConnectors.filter[
 			it.requiredRole_AssemblyConnector.requiringEntity_RequiredRole.equals(pcmEntity)]
 		val results = newLinkedList
 

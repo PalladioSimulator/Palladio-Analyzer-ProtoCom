@@ -14,14 +14,14 @@ import org.palladiosimulator.protocom.traverse.framework.system.XSystem
 class JeeSystem extends XSystem {
 	override generate() {
 
-		val assemblyConnectorList = entity.connectors__ComposedStructure.filter(typeof(AssemblyConnector)).toList
+		val assemblyConnectorSet = entity.connectors__ComposedStructure.filter(typeof(AssemblyConnector)).toSet
 		val repositoryComponentList = entity.assemblyContexts__ComposedStructure
 
 		repositoryComponentList.filter[BasicComponent.isInstance(it.encapsulatedComponent__AssemblyContext)].map[
 			it.encapsulatedComponent__AssemblyContext as BasicComponent].forEach[
 			generatedFiles.add(
 				injector.getInstance(typeof(JeeClasspath)).createFor(
-					new JavaEEIIOPClasspath((it), assemblyConnectorList)))]
+					new JavaEEIIOPClasspath((it), assemblyConnectorSet)))]
 
 		repositoryComponentList.filter[BasicComponent.isInstance(it.encapsulatedComponent__AssemblyContext)].map[
 			it.encapsulatedComponent__AssemblyContext as BasicComponent].forEach[
@@ -31,7 +31,7 @@ class JeeSystem extends XSystem {
 			it.encapsulatedComponent__AssemblyContext as BasicComponent].forEach[
 			generatedFiles.add(
 				injector.getInstance(typeof(JeeClass)).createFor(
-					new JavaEEIIOPBasicComponentClass((it), assemblyConnectorList)))]
+					new JavaEEIIOPBasicComponentClass((it), assemblyConnectorSet)))]
 
 		// ReadMe includes information about the generated Java EE prototype 
 		generatedFiles.add(injector.getInstance(typeof(JeeReadMe)).createFor(new JavaEEIIOPReadMe(entity)))

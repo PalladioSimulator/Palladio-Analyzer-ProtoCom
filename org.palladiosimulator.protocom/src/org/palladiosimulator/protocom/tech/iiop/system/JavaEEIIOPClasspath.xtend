@@ -2,21 +2,21 @@ package org.palladiosimulator.protocom.tech.iiop.system
 
 import org.palladiosimulator.pcm.core.composition.AssemblyConnector
 import org.palladiosimulator.pcm.repository.BasicComponent
-import java.util.List
 import org.palladiosimulator.protocom.lang.java.util.JavaNames
 import org.palladiosimulator.protocom.tech.iiop.JavaEEIIOPClasspathFile
+import java.util.Set
 
 class JavaEEIIOPClasspath extends JavaEEIIOPClasspathFile<BasicComponent> {
 
-	List<AssemblyConnector> assemblyConnector
+	Set<AssemblyConnector> assemblyConnectors
 
 	new(BasicComponent pcmEntity) {
 		super(pcmEntity)
 	}
 
-	new(BasicComponent pcmEntity, List<AssemblyConnector> assemblyConnectorList) {
+	new(BasicComponent pcmEntity, Set<AssemblyConnector> assemblyConnectorSet) {
 		super(pcmEntity)
-		this.assemblyConnector = assemblyConnectorList
+		this.assemblyConnectors = assemblyConnectorSet
 	}
 
 	override classPathEntries() {
@@ -53,7 +53,7 @@ class JavaEEIIOPClasspath extends JavaEEIIOPClasspathFile<BasicComponent> {
 	}
 
 	override requiredClientProjects() {
-		val basicComponentAssemblyConnectors = assemblyConnector.filter[
+		val basicComponentAssemblyConnectors = assemblyConnectors.filter[
 			it.requiredRole_AssemblyConnector.requiringEntity_RequiredRole.equals(pcmEntity)]
 		val results = newHashSet()
 
