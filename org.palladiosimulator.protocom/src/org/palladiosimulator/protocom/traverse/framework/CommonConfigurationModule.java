@@ -12,21 +12,22 @@ import org.eclipse.xtext.builder.impl.QueuedBuildData;
 import org.eclipse.xtext.builder.impl.ToBeBuiltComputer;
 import org.eclipse.xtext.builder.resourceloader.IResourceLoader;
 import org.eclipse.xtext.builder.resourceloader.ResourceLoaderProviders;
-import org.eclipse.xtext.builder.trace.StorageAwareTrace;
-import org.eclipse.xtext.builder.trace.TraceForStorageProvider;
-import org.eclipse.xtext.builder.trace.TraceMarkers;
 import org.eclipse.xtext.generator.AbstractFileSystemAccess2;
 import org.eclipse.xtext.generator.trace.DefaultTraceURIConverter;
-import org.eclipse.xtext.generator.trace.ITraceForStorageProvider;
 import org.eclipse.xtext.generator.trace.ITraceURIConverter;
 import org.eclipse.xtext.generator.trace.TraceFileNameProvider;
 import org.eclipse.xtext.generator.trace.TraceRegionSerializer;
 import org.eclipse.xtext.resource.IExternalContentSupport;
 import org.eclipse.xtext.resource.IResourceDescriptions;
+import org.eclipse.xtext.resource.IResourceServiceProvider;
 import org.eclipse.xtext.resource.XtextResourceSet;
 import org.eclipse.xtext.ui.containers.WorkspaceProjectsStateHelper;
 import org.eclipse.xtext.ui.editor.DirtyStateManager;
 import org.eclipse.xtext.ui.editor.IDirtyStateManager;
+import org.eclipse.xtext.ui.generator.trace.ITraceForStorageProvider;
+import org.eclipse.xtext.ui.generator.trace.StorageAwareTrace;
+import org.eclipse.xtext.ui.generator.trace.TraceForStorageProvider;
+import org.eclipse.xtext.ui.generator.trace.TraceMarkers;
 import org.eclipse.xtext.ui.notification.IStateChangeEventBroker;
 import org.eclipse.xtext.ui.notification.StateChangeEventBroker;
 import org.eclipse.xtext.ui.resource.IResourceSetProvider;
@@ -38,6 +39,7 @@ import org.eclipse.xtext.ui.shared.JdtHelper;
 import org.eclipse.xtext.ui.shared.contribution.ISharedStateContributionRegistry;
 import org.eclipse.xtext.ui.shared.internal.SharedStateContributionRegistryImpl;
 import org.eclipse.xtext.ui.util.IJdtHelper;
+import org.eclipse.xtext.ui.workspace.EclipseWorkspaceConfigProvider;
 import org.palladiosimulator.protocom.FSAProvider;
 
 import com.google.inject.AbstractModule;
@@ -80,6 +82,9 @@ public class CommonConfigurationModule extends AbstractModule {
     protected void configure() {
         // ProjectURI
         bind(String.class).annotatedWith(Names.named("ProjectURI")).toInstance(getProjectURI());
+
+        bind(IResourceServiceProvider.Registry.class).toInstance(IResourceServiceProvider.Registry.INSTANCE);
+        bind(EclipseWorkspaceConfigProvider.class);
 
         // Trace
         binder().install(new PrivateModule() {
