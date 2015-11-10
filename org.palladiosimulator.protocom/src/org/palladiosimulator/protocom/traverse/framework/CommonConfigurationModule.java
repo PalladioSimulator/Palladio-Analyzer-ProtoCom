@@ -39,7 +39,7 @@ import org.eclipse.xtext.ui.shared.JdtHelper;
 import org.eclipse.xtext.ui.shared.contribution.ISharedStateContributionRegistry;
 import org.eclipse.xtext.ui.shared.internal.SharedStateContributionRegistryImpl;
 import org.eclipse.xtext.ui.util.IJdtHelper;
-import org.eclipse.xtext.ui.workspace.EclipseWorkspaceConfigProvider;
+import org.eclipse.xtext.ui.workspace.EclipseProjectConfigProvider;
 import org.palladiosimulator.protocom.FSAProvider;
 
 import com.google.inject.AbstractModule;
@@ -84,7 +84,7 @@ public class CommonConfigurationModule extends AbstractModule {
         bind(String.class).annotatedWith(Names.named("ProjectURI")).toInstance(getProjectURI());
 
         bind(IResourceServiceProvider.Registry.class).toInstance(IResourceServiceProvider.Registry.INSTANCE);
-        bind(EclipseWorkspaceConfigProvider.class);
+        bind(EclipseProjectConfigProvider.class);
 
         // Trace
         binder().install(new PrivateModule() {
