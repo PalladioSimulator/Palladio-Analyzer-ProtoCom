@@ -22,6 +22,10 @@
       <import feature="org.eclipse.jst.web_ui.feature" version="3.7.0.v201506041749"/>
       <import feature="org.eclipse.jst.server_ui.feature" version="3.4.200.v201503102136"/>
       <import feature="org.eclipse.jst.server_adapters.ext.feature" version="3.3.400.v201501040134"/>
+      <import plugin="de.uka.ipd.sdq.probfunction.math" version="2.0.2" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.simucomframework.variables" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.sensorframework" version="2.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.commons"/>
    </requires>
 
    <plugin
