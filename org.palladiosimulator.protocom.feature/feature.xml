@@ -17,7 +17,7 @@
       <import plugin="org.palladiosimulator.analyzer.workflow" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="de.uka.ipd.sdq.workflow" version="1.1.0" match="greaterOrEqual"/>
       <import plugin="de.uka.ipd.sdq.codegen.simucontroller" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.editors.dialogs" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.editors.commons.dialogs" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="com.google.inject" version="3.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtext.generator" version="2.8.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.pcm" version="4.0.0" match="greaterOrEqual"/>
