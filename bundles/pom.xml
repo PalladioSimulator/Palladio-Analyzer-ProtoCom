@@ -13,12 +13,9 @@
 	
 	<modules>
 		<module>org.palladiosimulator.protocom</module>
-		<module>org.palladiosimulator.protocom.docs</module>
 		<module>org.palladiosimulator.protocom.framework.java.ee</module>
 		<module>org.palladiosimulator.protocom.framework.java.se</module>
 		<module>org.palladiosimulator.protocom.profiles</module>
-		<module>org.palladiosimulator.protocom.profiles.IIOPServerProfile</module>
-		<module>org.palladiosimulator.protocom.profiles.StatelessProfile</module>
 		<module>org.palladiosimulator.protocom.resourcestrategies</module>
 		<module>org.palladiosimulator.protocom.workflow</module>
 	</modules>
