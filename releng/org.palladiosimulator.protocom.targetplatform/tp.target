@@ -95,7 +95,7 @@
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
 <unit id="javax.websocket" version="1.0.0.v20140310-1603"/>
-<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20180525155205/repository/"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" filter="release" refresh="true">
 <unit id="org.palladiosimulator.simucom.feature.feature.group" version="4.1.1.201806261550"/>
@@ -162,13 +162,13 @@
 <repository location="https://sdqweb.ipd.kit.edu/eclipse/palladio/supporting/scheduler/nightly/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-<unit id="org.eclipse.bpel.feature.feature.group" version="1.1.1.Final-v20170531-1920"/>
-<unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.9.0.v201711022131"/>
-<unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.9.3.v201803221418"/>
-<unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.9.0.v201803221834"/>
-<unit id="org.eclipse.jst.server_ui.feature.feature.group" version="3.4.300.v201709251835"/>
-<unit id="org.eclipse.jst.server_adapters.ext.feature.feature.group" version="3.3.601.v201711301708"/>
-<repository location="http://download.eclipse.org/releases/oxygen/201804111000/"/>
+<unit id="org.eclipse.bpel.feature.feature.group" version="1.1.2.Final-v20180621-1835"/>
+<unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.10.100.v201903222115"/>
+<unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.9.400.v201905212122"/>
+<unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.12.0.v201903222115"/>
+<unit id="org.eclipse.jst.server_ui.feature.feature.group" version="3.4.300.v201901310132"/>
+<unit id="org.eclipse.jst.server_adapters.ext.feature.feature.group" version="3.3.602.v201901310132"/>
+<repository location="http://download.eclipse.org/releases/2019-06/201906191000/"/>
 </location>
 </locations>
 </target>
