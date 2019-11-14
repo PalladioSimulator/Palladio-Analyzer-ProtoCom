@@ -1,1 +1,5 @@
 target/
+bin/
+xtend-gen/
+*.ser
+tests/org.palladiosimulator.protocom.framework.tests/testConsumeHDDResults.csv

@@ -99,7 +99,7 @@
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
 <unit id="javax.websocket" version="1.0.0.v20140310-1603"/>
-<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository/"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20190827152740/repository/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" filter="release" refresh="true">
 <unit id="org.palladiosimulator.simucom.feature.feature.group" version="4.1.1.201806261550"/>
@@ -167,12 +167,12 @@
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
 <unit id="org.eclipse.bpel.feature.feature.group" version="1.1.2.Final-v20180621-1835"/>
-<unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.10.100.v201903222115"/>
-<unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.9.400.v201905212122"/>
-<unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.12.0.v201903222115"/>
+<unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.15.0.v201908261515"/>
+<unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.15.0.v201908261515"/>
+<unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.15.0.v201908261515"/>
 <unit id="org.eclipse.jst.server_ui.feature.feature.group" version="3.4.300.v201901310132"/>
 <unit id="org.eclipse.jst.server_adapters.ext.feature.feature.group" version="3.3.602.v201901310132"/>
-<repository location="http://download.eclipse.org/releases/2019-06/201906191000/"/>
+<repository location="http://download.eclipse.org/releases/2019-09/201909181001/"/>
 </location>
 </locations>
 </target>
