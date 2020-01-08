@@ -210,8 +210,8 @@ public class ReadLargeChunksDemand extends AbstractDemandStrategy implements IDe
         long neededSize = this.numberOfFiles * DEFAULT_MAX_FILE_SIZE;
         long tmpSize = SystemResourcesUtil.getFreeTempDirectorySize();
         if (neededSize > tmpSize) {
-            LOGGER.error("The required storage space for calibration exceeds the free space in "
-                    + SystemResourcesUtil.TEMP_DIR.getAbsolutePath());
+            LOGGER.error("The required storage space " + neededSize + " for calibration exceeds the free space "
+                + tmpSize + " in " + SystemResourcesUtil.TEMP_DIR.getAbsolutePath());
             System.exit(-1);
         }
 
