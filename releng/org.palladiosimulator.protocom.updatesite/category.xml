@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-	<feature url="features/org.palladiosimulator.protocom.feature_4.2.0.qualifier.jar" id="org.palladiosimulator.protocom.feature" version="4.2.0.qualifier">
+	<feature url="features/org.palladiosimulator.protocom.feature_4.3.0.qualifier.jar" id="org.palladiosimulator.protocom.feature" version="4.3.0.qualifier">
 	   <category name="org.palladiosimulator.corefeatures.category"/>
 	</feature>
-	<feature url="features/org.palladiosimulator.protocom.feature.source_4.2.0.qualifier.jar" id="org.palladiosimulator.protocom.feature.source" version="4.2.0.qualifier">
+	<feature url="features/org.palladiosimulator.protocom.feature.source_4.3.0.qualifier.jar" id="org.palladiosimulator.protocom.feature.source" version="4.3.0.qualifier">
 	   <category name="org.palladiosimulator.corefeatures.source.category"/>
 	</feature>
-	<feature url="features/org.palladiosimulator.protocom.javaee.feature_4.2.0.qualifier.jar" id="org.palladiosimulator.protocom.javaee.feature" version="4.2.0.qualifier">
+	<feature url="features/org.palladiosimulator.protocom.javaee.feature_4.3.0.qualifier.jar" id="org.palladiosimulator.protocom.javaee.feature" version="4.3.0.qualifier">
 	   <category name="org.palladiosimulator.corefeatures.category"/>
 	</feature>
-	<feature url="features/org.palladiosimulator.protocom.javaee.feature.source_4.2.0.qualifier.jar" id="org.palladiosimulator.protocom.javaee.feature.source" version="4.2.0.qualifier">
+	<feature url="features/org.palladiosimulator.protocom.javaee.feature.source_4.3.0.qualifier.jar" id="org.palladiosimulator.protocom.javaee.feature.source" version="4.3.0.qualifier">
 	   <category name="org.palladiosimulator.corefeatures.source.category"/>
 	</feature>
 	<category-def name="org.palladiosimulator.corefeatures.category" label="This category contains all features which belong to a complete installation of the Palladio Bench Core Features">
