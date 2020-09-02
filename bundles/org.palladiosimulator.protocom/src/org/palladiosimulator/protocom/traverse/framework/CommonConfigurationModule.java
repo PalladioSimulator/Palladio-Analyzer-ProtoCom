@@ -40,6 +40,7 @@ import org.eclipse.xtext.ui.shared.contribution.ISharedStateContributionRegistry
 import org.eclipse.xtext.ui.shared.internal.SharedStateContributionRegistryImpl;
 import org.eclipse.xtext.ui.util.IJdtHelper;
 import org.eclipse.xtext.ui.workspace.EclipseProjectConfigProvider;
+import org.eclipse.xtext.ui.workspace.WorkspaceLockAccess;
 import org.palladiosimulator.protocom.FSAProvider;
 
 import com.google.inject.AbstractModule;
@@ -112,6 +113,7 @@ public class CommonConfigurationModule extends AbstractModule {
         bind(IExtensionRegistry.class).toInstance(Platform.getExtensionRegistry());
         bind(ISharedStateContributionRegistry.class).to(SharedStateContributionRegistryImpl.class);
         bind(IStorage2UriMapper.class).to(Storage2UriMapperImpl.class);
+        bind(WorkspaceLockAccess.class);
 
         // builder
         bind(QueuedBuildData.class);

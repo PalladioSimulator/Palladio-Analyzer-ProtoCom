@@ -448,6 +448,53 @@ class JavaNames {
 		e.javaName()
 	}
 	
+	// ######################### Microprofile ####################################
+	
+	static def getMicroprofileFileName(Entity e) {
+		"/src/main/java/" + e.implementationPackage().fqnToDirectoryPath() + "/" + e.javaName() + ".java";
+	}
+	
+	static def fqnMicroprofileComponentInterfaceAnnotation(ProvidedRole e){
+		e.providingEntity_ProvidedRole.basePackageName()
+	}
+	
+	static dispatch def fqnMicroprofileOperationInterfacePath(OperationProvidedRole i){
+		"src/main/java/" + "interfaces/" + i.getProvidedInterface__OperationProvidedRole().javaName() +".java"
+		// "src/" + i.providingEntity_ProvidedRole.javaName().toLowerCase + "/" + "interfaces"+ "/" + "ejb" + "/" + i.getProvidedInterface__OperationProvidedRole().javaName() +".java"
+	}
+	
+	static dispatch def fqnMicroprofileOperationInterfacePath(InfrastructureProvidedRole i){
+		"src/" + i.providingEntity_ProvidedRole.javaName().toLowerCase+ "/" + "interfaces" + "/" + "ejb" + "/" + i.getProvidedInterface__InfrastructureProvidedRole().javaName() +".java"
+	}
+	
+	static dispatch def fqnMicroprofileOperationInterfacePath(BasicComponent i){
+		"src/" + i.javaName().toLowerCase + "/" + "ejb" + "/" + i.javaName() +".java"
+	}
+	
+	static dispatch def fqnMicroprofileAnnotation(OperationProvidedRole i){
+		i.providingEntity_ProvidedRole.javaName()
+	}
+	
+	static dispatch def fqnMicroprofileAnnotation(InfrastructureProvidedRole i){
+		i.providingEntity_ProvidedRole.javaName()
+	}
+	
+	static dispatch def fqnMicroprofileAnnotation(BasicComponent i){
+		 i.javaName()
+	}
+	
+	/*static dispatch def getFileName(BasicComponent i) {
+		"/src/" + i.implementationPackage().fqnToDirectoryPath() + "/" + i.javaName() + ".java";
+	}
+	
+	static dispatch def getFileName(OperationProvidedRole i){
+		"/src/" + i.implementationPackage().fqnToDirectoryPath() + "/" + i.javaName() + ".java";
+	}
+	
+	static dispatch def getFileName(InfrastructureProvidedRole i){
+		"/src/" + i.implementationPackage().fqnToDirectoryPath() + "/" + i.javaName() + ".java";
+	}*/
+	
 	/**
 	 * TODO Implement EventTypes?
 	 */
