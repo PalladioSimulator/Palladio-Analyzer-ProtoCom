@@ -15,6 +15,7 @@ import org.palladiosimulator.protocom.traverse.jee.JeeConfigurationModule;
 import org.palladiosimulator.protocom.traverse.jeeservlet.JeeServletConfigurationModule;
 import org.palladiosimulator.protocom.traverse.jse.JseConfigurationModule;
 import org.palladiosimulator.protocom.traverse.jsestub.JseStubConfigurationModule;
+import org.palladiosimulator.protocom.traverse.microprofile.MicroprofileConfigurationModule;
 import org.palladiosimulator.protocom.workflow.ProtoComGenerationConfiguration;
 
 import com.google.inject.Guice;
@@ -51,12 +52,15 @@ public class TransformPCMToCodeXtendJob extends SequentialBlackboardInteractingJ
         CommonConfigurationModule guiceConfiguration = null;
         if (configuration.getCodeGenerationAdvice() == AbstractCodeGenerationWorkflowRunConfiguration.CodeGenerationAdvice.PROTO) {
             guiceConfiguration = new JseConfigurationModule();
-        } else if (configuration.getCodeGenerationAdvice() == AbstractCodeGenerationWorkflowRunConfiguration.CodeGenerationAdvice.POJO) {
-            guiceConfiguration = new JseStubConfigurationModule();
+        //} else if (configuration.getCodeGenerationAdvice() == AbstractCodeGenerationWorkflowRunConfiguration.CodeGenerationAdvice.POJO) {
+        //    guiceConfiguration = new JseStubConfigurationModule();
         } else if (configuration.getCodeGenerationAdvice() == AbstractCodeGenerationWorkflowRunConfiguration.CodeGenerationAdvice.EJB3) {
             guiceConfiguration = new JeeConfigurationModule();
         } else if (configuration.getCodeGenerationAdvice() == AbstractCodeGenerationWorkflowRunConfiguration.CodeGenerationAdvice.SERVLET) {
         	guiceConfiguration = new JeeServletConfigurationModule();
+        	//TODO change .Servlet to something with microprofile
+        } else if (configuration.getCodeGenerationAdvice() == AbstractCodeGenerationWorkflowRunConfiguration.CodeGenerationAdvice.POJO) {
+        	guiceConfiguration = new MicroprofileConfigurationModule();
         }
         
         guiceConfiguration.setProjectURI(configuration.getStoragePluginID());
