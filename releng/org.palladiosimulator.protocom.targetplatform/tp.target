@@ -170,7 +170,7 @@
 <unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.20.0.v202011230434"/>
 <unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.20.0.v202011230434"/>
 <unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.20.0.v202011230434"/>
-<unit id="org.eclipse.jst.server_ui.feature.feature.group" version="3.4.400.v201910252115"/>
+<unit id="org.eclipse.jst.server_ui.feature.feature.group" version="3.4.400.v202007170127"/>
 <unit id="org.eclipse.jst.server_adapters.ext.feature.feature.group" version="3.3.900.v202009261919"/>
 <repository location="http://download.eclipse.org/releases/2020-12/202012161000/"/>
 </location>
