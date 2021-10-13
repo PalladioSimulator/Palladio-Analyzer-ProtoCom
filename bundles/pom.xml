@@ -17,6 +17,7 @@
 		<module>org.palladiosimulator.protocom.framework.java.se</module>
 		<module>org.palladiosimulator.protocom.profiles</module>
 		<module>org.palladiosimulator.protocom.resourcestrategies</module>
+		<module>org.palladiosimulator.protocom.resourcestrategies.microbenchmark</module>
 		<module>org.palladiosimulator.protocom.workflow</module>
 	</modules>
 	
