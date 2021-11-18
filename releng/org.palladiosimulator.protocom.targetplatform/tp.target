@@ -99,6 +99,7 @@
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
 <unit id="javax.websocket" version="0.0.0"/>
+<unit id="javax.servlet" version="0.0.0"/>
 <repository location="http://download.eclipse.org/tools/orbit/downloads/2021-09/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" filter="release" refresh="true">
