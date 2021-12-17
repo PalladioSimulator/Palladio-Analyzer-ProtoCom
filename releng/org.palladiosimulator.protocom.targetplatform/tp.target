@@ -100,7 +100,7 @@
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
 <unit id="javax.websocket" version="0.0.0"/>
 <unit id="javax.servlet" version="0.0.0"/>
-<repository location="http://download.eclipse.org/tools/orbit/downloads/2021-09/"/>
+<repository location="https://download.eclipse.org/tools/orbit/downloads/2021-12/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" filter="release" refresh="true">
 <unit id="org.palladiosimulator.simucom.feature.feature.group" version="4.1.1.201806261550"/>
@@ -173,7 +173,7 @@
 <unit id="org.eclipse.jst.web_ui.feature.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.jst.server_ui.feature.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.jst.server_adapters.ext.feature.feature.group" version="0.0.0"/>
-<repository location="http://download.eclipse.org/releases/2021-09/202109151000/"/>
+<repository location="https://download.eclipse.org/releases/2021-12/202112081000/"/>
 </location>
 </locations>
 </target>
