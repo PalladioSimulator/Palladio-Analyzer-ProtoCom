@@ -250,4 +250,4 @@ Require-Bundle: org.eclipse.core.runtime;bundle-version="3.10.0",
  de.uka.ipd.sdq.simucomframework.variables;bundle-version="1.0.0",
  de.uka.ipd.sdq.sensorframework;bundle-version="2.0.0",
  org.palladiosimulator.commons
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-17

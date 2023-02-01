@@ -20,4 +20,4 @@ Require-Bundle: org.apache.log4j,
  de.uka.ipd.sdq.probfunction.math;bundle-version="2.0.0",
  javax.servlet;bundle-version="3.0.0"
 Bundle-Vendor: palladiosimulator.org
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-17
