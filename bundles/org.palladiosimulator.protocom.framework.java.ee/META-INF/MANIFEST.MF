@@ -242,12 +242,12 @@ Export-Package: com.fasterxml.jackson.annotation,
 Bundle-Vendor: palladiosimulator.org
 Require-Bundle: org.eclipse.core.runtime;bundle-version="3.10.0",
  org.apache.log4j;bundle-version="1.2.15",
- javax.servlet;bundle-version="3.0.0",
- javax.websocket;bundle-version="1.0.0",
+ jakarta.servlet,
+ jakarta.websocket,
  org.apache.chemistry.opencmis;bundle-version="1.0.0",
  org.palladiosimulator.protocom.resourcestrategies;bundle-version="1.0.0",
- de.uka.ipd.sdq.probfunction.math;bundle-version="2.0.2",
- de.uka.ipd.sdq.simucomframework.variables;bundle-version="1.0.0",
- de.uka.ipd.sdq.sensorframework;bundle-version="2.0.0",
+ de.uka.ipd.sdq.probfunction.math,
+ de.uka.ipd.sdq.simucomframework.variables,
+ de.uka.ipd.sdq.sensorframework,
  org.palladiosimulator.commons
 Bundle-RequiredExecutionEnvironment: JavaSE-17
