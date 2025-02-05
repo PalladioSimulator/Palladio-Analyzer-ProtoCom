@@ -15,4 +15,23 @@
 		<module>org.palladiosimulator.protocom.framework.tests</module>
 	</modules>
 	
+	<profiles>
+		<profile>
+			<id>protocom-skip-platform-tests</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.eclipse.tycho</groupId>
+						<artifactId>tycho-surefire-plugin</artifactId>
+						<configuration>
+							<excludes>
+								<!-- This test makes strong assumptions about available disk space. -->
+								<exclude>org.palladiosimulator.protocom.framework.tests.PrototypePlatformTests.class</exclude>
+							</excludes>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>
