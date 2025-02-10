@@ -2,8 +2,8 @@ package org.palladiosimulator.protocom.framework.java.ee.experiment;
 
 import java.util.Stack;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import org.palladiosimulator.protocom.framework.java.ee.prototype.ICallVisitor;
 

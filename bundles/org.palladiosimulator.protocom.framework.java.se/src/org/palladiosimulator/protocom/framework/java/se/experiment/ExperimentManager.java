@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.Iterator;
 
-import javax.management.RuntimeErrorException;
+import jakarta.management.RuntimeErrorException;
 
 import org.palladiosimulator.protocom.framework.java.se.registry.IRmiRegistry;
 

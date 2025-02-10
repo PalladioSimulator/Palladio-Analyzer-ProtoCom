@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.framework.java.ee.modules;
 
-import javax.ws.rs.WebApplicationException;
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.WebApplicationException;
+import jakarta.ws.rs.core.Response;
 
 /**
  * Signals that a module was not able to start.

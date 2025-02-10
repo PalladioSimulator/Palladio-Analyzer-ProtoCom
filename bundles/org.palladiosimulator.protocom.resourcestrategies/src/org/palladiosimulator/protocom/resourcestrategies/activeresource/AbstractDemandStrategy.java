@@ -4,13 +4,13 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.Properties;
 
-import javax.measure.quantity.Duration;
-import javax.measure.quantity.Quantity;
-import javax.measure.unit.BaseUnit;
-import javax.measure.unit.NonSI;
-import javax.measure.unit.ProductUnit;
-import javax.measure.unit.SI;
-import javax.measure.unit.Unit;
+import jakarta.measure.quantity.Duration;
+import jakarta.measure.quantity.Quantity;
+import jakarta.measure.unit.BaseUnit;
+import jakarta.measure.unit.NonSI;
+import jakarta.measure.unit.ProductUnit;
+import jakarta.measure.unit.SI;
+import jakarta.measure.unit.Unit;
 
 import org.apache.log4j.Logger;
 import org.jscience.physics.amount.Amount;

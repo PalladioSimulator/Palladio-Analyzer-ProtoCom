@@ -12,7 +12,7 @@ import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.io.Serializable;
 
-import javax.measure.quantity.Duration;
+import jakarta.measure.quantity.Duration;
 
 import org.apache.log4j.Logger;
 import org.jscience.physics.amount.Amount;

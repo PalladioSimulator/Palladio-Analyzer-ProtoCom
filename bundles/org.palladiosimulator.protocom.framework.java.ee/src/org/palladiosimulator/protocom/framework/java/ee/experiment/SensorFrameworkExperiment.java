@@ -14,8 +14,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.UUID;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;

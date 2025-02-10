@@ -2,7 +2,7 @@ package org.palladiosimulator.protocom.framework.java.ee.main;
 
 import java.util.Set;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import org.palladiosimulator.protocom.framework.java.ee.experiment.IExperiment;
 import org.palladiosimulator.protocom.framework.java.ee.experiment.SensorFrameworkExperiment;

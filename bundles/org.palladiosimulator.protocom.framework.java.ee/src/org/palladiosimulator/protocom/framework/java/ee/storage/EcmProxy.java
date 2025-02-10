@@ -3,7 +3,7 @@ package org.palladiosimulator.protocom.framework.java.ee.storage;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import javax.naming.InitialContext;
+import jakarta.naming.InitialContext;
 
 import org.apache.chemistry.opencmis.client.api.Session;
 import org.apache.chemistry.opencmis.commons.exceptions.CmisObjectNotFoundException;

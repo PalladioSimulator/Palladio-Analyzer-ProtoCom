@@ -3,7 +3,7 @@ package org.palladiosimulator.protocom.framework.java.ee.prototype;
 import java.util.LinkedList;
 import java.util.List;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 /**
  * The PrototypeBridge class is used to make generated prototype data available to the framework.

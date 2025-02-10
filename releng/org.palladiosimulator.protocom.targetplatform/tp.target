@@ -178,8 +178,8 @@
 <repository location="https://updatesite.mdsd.tools/library-emfeditutils/releases/latest/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-<unit id="javax.websocket" version="0.0.0"/>
-<unit id="javax.servlet" version="0.0.0"/>
+<unit id="jakarta.websocket" version="0.0.0"/>
+<unit id="jakarta.servlet" version="0.0.0"/>
 <repository location="https://download.eclipse.org/tools/orbit/downloads/2021-12/"/>
 </location>
 </locations>

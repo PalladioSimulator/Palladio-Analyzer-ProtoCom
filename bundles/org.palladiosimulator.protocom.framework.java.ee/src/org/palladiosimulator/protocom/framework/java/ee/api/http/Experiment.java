@@ -2,11 +2,11 @@ package org.palladiosimulator.protocom.framework.java.ee.api.http;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-import javax.inject.Inject;
-import javax.ws.rs.PUT;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.core.Response;
+import jakarta.inject.Inject;
+import jakarta.ws.rs.PUT;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.core.Response;
 
 /**
  * API class for controlling experiments and experiment iterations.

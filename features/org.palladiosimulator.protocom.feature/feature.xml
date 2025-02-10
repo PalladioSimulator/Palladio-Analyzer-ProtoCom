@@ -45,7 +45,7 @@
       <import plugin="org.apache.commons.cli"/>
       <import plugin="de.uka.ipd.sdq.simucomframework.variables" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="de.uka.ipd.sdq.probfunction.math" version="2.0.0" match="greaterOrEqual"/>
-      <import plugin="javax.servlet"/>
+      <import plugin="jakarta.servlet"/>
       <import plugin="org.palladiosimulator.protocom" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.protocom.framework.java.se" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.protocom.framework.java.ee" version="1.0.0" match="greaterOrEqual"/>

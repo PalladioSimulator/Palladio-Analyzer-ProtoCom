@@ -3,7 +3,7 @@ package org.palladiosimulator.protocom.framework.java.ee.api.sockets;
 import java.io.IOException;
 import java.util.Queue;
 
-import javax.websocket.Session;
+import jakarta.websocket.Session;
 
 /**
  * Abstract base class for WebSocket classes.

@@ -3,8 +3,8 @@ package org.palladiosimulator.protocom.resourcestrategies.system;
 import java.io.File;
 import java.lang.management.ManagementFactory;
 
-import javax.measure.quantity.Duration;
-import javax.measure.unit.SI;
+import jakarta.measure.quantity.Duration;
+import jakarta.measure.unit.SI;
 
 import org.jscience.physics.amount.Amount;
 
