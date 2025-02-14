@@ -6,8 +6,8 @@ import org.palladiosimulator.analyzer.workflow.ConstantsContainer;
 import org.palladiosimulator.analyzer.workflow.configurations.AbstractCodeGenerationWorkflowRunConfiguration.CodeGenerationAdvice;
 import org.palladiosimulator.analyzer.workflow.runconfig.SensitivityAnalysisConfiguration;
 
-import de.uka.ipd.sdq.workflow.launchconfig.AbstractWorkflowBasedRunConfiguration;
-import de.uka.ipd.sdq.workflow.launchconfig.AbstractWorkflowConfigurationBuilder;
+import de.uka.ipd.sdq.workflow.launchconfig.core.AbstractWorkflowBasedRunConfiguration;
+import de.uka.ipd.sdq.workflow.launchconfig.core.AbstractWorkflowConfigurationBuilder;
 
 public class ProtoComGenerationLaunchConfigurationBasedConfigBuilder extends AbstractWorkflowConfigurationBuilder {
 
