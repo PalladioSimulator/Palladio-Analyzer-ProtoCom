@@ -12,17 +12,24 @@ import org.palladiosimulator.protocom.jobs.ProtoComCodeGenerationJob;
 
 import de.uka.ipd.sdq.codegen.simucontroller.debug.IDebugListener;
 import de.uka.ipd.sdq.codegen.simucontroller.debug.SimulationDebugListener;
+import de.uka.ipd.sdq.workflow.WorkflowExceptionHandler;
 import de.uka.ipd.sdq.workflow.jobs.IJob;
 import de.uka.ipd.sdq.workflow.launchconfig.core.AbstractWorkflowConfigurationBuilder;
 import de.uka.ipd.sdq.workflow.logging.console.LoggerAppenderStruct;
+import de.uka.ipd.sdq.workflow.ui.UIBasedWorkflowExceptionHandler;
 
 /**
  * The class adapts defined functionality in the AbstractMDSDLaunchConfigurationDelegate for SimuCom
  * Framework.
  * 
  */
-public class ProtoComCodegenWorkflowLauncher extends
-        AbstractPCMLaunchConfigurationDelegate<ProtoComGenerationConfiguration> {
+public class ProtoComCodegenWorkflowLauncher
+        extends AbstractPCMLaunchConfigurationDelegate<ProtoComGenerationConfiguration> {
+
+    @Override
+    protected WorkflowExceptionHandler createExceptionHandler(boolean interactive) {
+        return new UIBasedWorkflowExceptionHandler(!interactive);
+    }
 
     /*
      * (non-Javadoc)
@@ -54,8 +61,8 @@ public class ProtoComCodegenWorkflowLauncher extends
     @Override
     protected ArrayList<LoggerAppenderStruct> setupLogging(Level logLevel) throws CoreException {
         ArrayList<LoggerAppenderStruct> loggerList = super.setupLogging(logLevel);
-        loggerList.add(setupLogger("de.uka.ipd.sdq.codegen", logLevel, Level.DEBUG == logLevel ? DETAILED_LOG_PATTERN
-                : SHORT_LOG_PATTERN));
+        loggerList.add(setupLogger("de.uka.ipd.sdq.codegen", logLevel,
+                Level.DEBUG == logLevel ? DETAILED_LOG_PATTERN : SHORT_LOG_PATTERN));
         loggerList.add(setupLogger("de.uka.ipd.sdq.simucomframework", logLevel,
                 Level.DEBUG == logLevel ? DETAILED_LOG_PATTERN : SHORT_LOG_PATTERN));
         loggerList.add(setupLogger("de.uka.ipd.sdq.workflow.mdsd.emf.qvtr", logLevel,
@@ -73,7 +80,8 @@ public class ProtoComCodegenWorkflowLauncher extends
      * (de.uka.ipd.sdq.codegen.runconfig.AttributesGetMethods)
      */
     @Override
-    protected IJob createWorkflowJob(ProtoComGenerationConfiguration config, final ILaunch launch) throws CoreException {
+    protected IJob createWorkflowJob(ProtoComGenerationConfiguration config, final ILaunch launch)
+            throws CoreException {
         IDebugListener listener = null;
 
         if (config.isDebug()) {
