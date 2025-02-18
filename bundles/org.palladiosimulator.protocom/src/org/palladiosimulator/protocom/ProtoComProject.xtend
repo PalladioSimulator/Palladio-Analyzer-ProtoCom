@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom
 
 import de.uka.ipd.sdq.workflow.jobs.JobFailedException
-import org.palladiosimulator.analyzer.workflow.configurations.AbstractCodeGenerationWorkflowRunConfiguration
+import org.palladiosimulator.analyzer.workflow.core.configurations.AbstractCodeGenerationWorkflowRunConfiguration
 import java.util.List
 import org.apache.log4j.Logger
 import org.eclipse.core.resources.ICommand
