@@ -13,7 +13,7 @@ import org.eclipse.ui.PlatformUI
 import java.io.File
 import org.apache.log4j.Logger
 import java.util.HashMap
-import org.palladiosimulator.analyzer.workflow.configurations.AbstractCodeGenerationWorkflowRunConfiguration
+import org.palladiosimulator.analyzer.workflow.core.configurations.AbstractCodeGenerationWorkflowRunConfiguration
 
 class ProtoComProjectFactory {
 	/** Logger for this class. */

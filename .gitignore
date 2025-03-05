@@ -2,4 +2,5 @@ target/
 bin/
 xtend-gen/
 *.ser
+.polyglot.*
 tests/org.palladiosimulator.protocom.framework.tests/testConsumeHDDResults.csv

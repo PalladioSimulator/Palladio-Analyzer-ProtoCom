@@ -1,7 +1,7 @@
 package org.palladiosimulator.protocom.jobs;
 
 import org.eclipse.core.runtime.CoreException;
-import org.palladiosimulator.analyzer.workflow.jobs.LoadPCMModelsIntoBlackboardJob;
+import org.palladiosimulator.analyzer.workflow.core.jobs.LoadPCMModelsIntoBlackboardJob;
 import org.palladiosimulator.analyzer.workflow.jobs.ValidatePCMModelsJob;
 import org.palladiosimulator.protocom.workflow.ProtoComGenerationConfiguration;
 
