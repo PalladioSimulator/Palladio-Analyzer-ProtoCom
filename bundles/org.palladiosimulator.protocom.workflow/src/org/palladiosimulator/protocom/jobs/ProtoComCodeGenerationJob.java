@@ -5,7 +5,7 @@ import org.palladiosimulator.analyzer.workflow.core.jobs.LoadPCMModelsIntoBlackb
 import org.palladiosimulator.analyzer.workflow.jobs.ValidatePCMModelsJob;
 import org.palladiosimulator.protocom.workflow.ProtoComGenerationConfiguration;
 
-import de.uka.ipd.sdq.codegen.simucontroller.debug.IDebugListener;
+import de.uka.ipd.sdq.codegen.simucontroller.core.debug.IDebugListener;
 import de.uka.ipd.sdq.workflow.jobs.IBlackboardInteractingJob;
 import de.uka.ipd.sdq.workflow.jobs.SequentialBlackboardInteractingJob;
 import de.uka.ipd.sdq.workflow.mdsd.blackboard.MDSDBlackboard;
