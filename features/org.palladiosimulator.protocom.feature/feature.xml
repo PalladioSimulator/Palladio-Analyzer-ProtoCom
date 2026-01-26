@@ -2,7 +2,7 @@
 <feature
       id="org.palladiosimulator.protocom.feature"
       label="Palladio Component Model - Analyzer: ProtoCom for Java SE"
-      version="5.2.2"
+      version="6.0.0.qualifier"
       plugin="org.palladiosimulator.branding"
       license-feature="org.palladiosimulator.license"
       license-feature-version="1.0.0">
@@ -14,13 +14,13 @@
    <requires>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
-      <import plugin="org.palladiosimulator.analyzer.workflow" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.analyzer.workflow"/>
       <import plugin="de.uka.ipd.sdq.workflow"/>
-      <import plugin="de.uka.ipd.sdq.codegen.simucontroller" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.editors.commons.dialogs" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.codegen.simucontroller"/>
+      <import plugin="org.palladiosimulator.editors.commons.dialogs"/>
       <import plugin="com.google.inject" version="3.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtext.xtext.generator"/>
-      <import plugin="org.palladiosimulator.pcm" version="4.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.pcm"/>
       <import plugin="org.eclipse.core.resources"/>
       <import plugin="org.apache.log4j"/>
       <import plugin="org.jscience"/>
@@ -39,17 +39,17 @@
       <import plugin="org.eclipse.wst.validation" version="1.2.501" match="greaterOrEqual"/>
       <import plugin="org.objectweb.asm" version="3.3.1" match="greaterOrEqual"/>
       <import plugin="org.eclipse.jst.j2ee" version="1.1.710" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.mdsdprofiles.api" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.mdsdprofiles.api"/>
       <import plugin="org.modelversioning.emfprofile" version="1.1.0" match="greaterOrEqual"/>
       <import plugin="de.uka.ipd.sdq.sensorframework"/>
       <import plugin="org.apache.commons.cli"/>
-      <import plugin="de.uka.ipd.sdq.simucomframework.variables" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="de.uka.ipd.sdq.probfunction.math" version="2.0.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.simucomframework.variables"/>
+      <import plugin="de.uka.ipd.sdq.probfunction.math"/>
       <import plugin="javax.servlet"/>
-      <import plugin="org.palladiosimulator.protocom" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.protocom.framework.java.se" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.protocom.framework.java.ee" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.commons" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.protocom"/>
+      <import plugin="org.palladiosimulator.protocom.framework.java.se"/>
+      <import plugin="org.palladiosimulator.protocom.framework.java.ee"/>
+      <import plugin="org.palladiosimulator.commons"/>
       <import plugin="org.eclipse.jdt.ui" version="3.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.core.filesystem" version="1.4.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.ant.core" version="3.0.0" match="greaterOrEqual"/>

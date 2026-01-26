@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: ProtoCom Framework
 Bundle-SymbolicName: org.palladiosimulator.protocom.framework.java.se
-Bundle-Version: 5.2.2
+Bundle-Version: 6.0.0.qualifier
 Export-Package: .,
  org.palladiosimulator.protocom.framework.java.se,
  org.palladiosimulator.protocom.framework.java.se.experiment,
@@ -16,8 +16,8 @@ Require-Bundle: org.apache.log4j,
  org.palladiosimulator.protocom.resourcestrategies,
  de.uka.ipd.sdq.sensorframework,
  org.apache.commons.cli;visibility:=reexport,
- de.uka.ipd.sdq.simucomframework.variables;bundle-version="1.0.0",
- de.uka.ipd.sdq.probfunction.math;bundle-version="2.0.0",
+ de.uka.ipd.sdq.simucomframework.variables,
+ de.uka.ipd.sdq.probfunction.math,
  javax.servlet
 Bundle-Vendor: palladiosimulator.org
 Bundle-RequiredExecutionEnvironment: JavaSE-17

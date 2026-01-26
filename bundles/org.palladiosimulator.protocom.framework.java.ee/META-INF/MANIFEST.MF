@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: ProtoCom Framework for Java EE
 Bundle-SymbolicName: org.palladiosimulator.protocom.framework.java.ee
-Bundle-Version: 5.2.2
+Bundle-Version: 6.0.0.qualifier
 Bundle-ClassPath: bin/,
  .
 Export-Package: com.fasterxml.jackson.annotation,
@@ -245,7 +245,7 @@ Require-Bundle: org.eclipse.core.runtime;bundle-version="3.10.0",
  javax.servlet,
  javax.websocket,
  org.apache.chemistry.opencmis;bundle-version="1.0.0",
- org.palladiosimulator.protocom.resourcestrategies;bundle-version="1.0.0",
+ org.palladiosimulator.protocom.resourcestrategies,
  de.uka.ipd.sdq.probfunction.math,
  de.uka.ipd.sdq.simucomframework.variables,
  de.uka.ipd.sdq.sensorframework,
